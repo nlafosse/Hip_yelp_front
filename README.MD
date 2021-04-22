@@ -7,7 +7,7 @@ Using this site, hippies can find food, bar and night life near them. Then after
 
 ## Set up and Installation
 
-setted up in OSX
+This part is only frontend where react is used. setted up mostly OSX and Linux
 
 ```bash
 pip install python3
@@ -19,7 +19,10 @@ pip install django
 pip install psycopg2-binary
 ```
 ```bash 
-django-admin startproject 
+pip install react 
+```
+```bash
+startreactproject
 ```
 
 ## Usage
