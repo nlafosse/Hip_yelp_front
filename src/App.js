@@ -1,10 +1,11 @@
 import './App.css';
-import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Foods from './Components/Foods/Foods'
 import { useState, useEffect } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Cards from './Components/Cards/Cards'
+import FoodDetail from './Components/FoodDetail/FoodDetail';
 // Save the Component, key and path in an array of objects for each Route
 // You could write all routes by hand but I'm lazy annd this lets me use
 // the map method to just loop over them and make my routes
@@ -45,11 +46,8 @@ export default function App () {
   }
   // We dont need to pull the data on page load
   // useEffect(() => {
-  //   getApiDate();
+  //   getApiData();
   // }, []);
-
-
-
 
   return (
     <Router>
@@ -57,6 +55,10 @@ export default function App () {
       <Switch>
         <Route exact path="/" render={()=> <Home />} />
         <Route exact path="/Foods" render={()=> <Foods apiData={apiData} getApiData={getApiData}/> } />
+        <Route 
+          path="/Foods/:id"
+          render={(routerProps) => <FoodDetail hotspot={apiData} routerProps={routerProps}/>}
+        />
       </Switch>
     </Router>
   )
