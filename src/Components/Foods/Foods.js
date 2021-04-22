@@ -1,17 +1,17 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import mockDataFoods from "../../mockDataFoods.json"
-
-const Food = (props) => {
-  const {match} = props;
-  const [params] = match;
-  const{foodId} = params;
+import Cards from "../Cards/Cards"
+const Food = () => {
+  // const {match} = props;
+  // const [params] = match;
+  // const{foodId} = params;
 
   const [foodData, setFoodData] = useState(mockDataFoods);
 
   const getFoodData = async () => {
     try {
-      const res = await fetch("https://hotspot1.herokuapp.com/foods/" + foodId)
+      const res = await fetch("https://hotspot1.herokuapp.com/foods/")
       const data = await res.json();
       setFoodData(data)
     } catch (err) {
@@ -32,6 +32,7 @@ const Food = (props) => {
       <p>type: {foodData.group}</p>
       <p>address: {foodData.address}</p>
       <p>description: {foodData.description}</p>
+      <Cards placeData={foodData} group={"Foods"}/>
     </div>
   )
 }
