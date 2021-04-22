@@ -35,3 +35,5 @@ const Food = (props) => {
     </div>
   )
 }
+
+export default Food;
