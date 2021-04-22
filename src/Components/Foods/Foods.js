@@ -26,12 +26,8 @@ const Food = () => {
   // console.log(foodData)
 
   return (
-    <div className= "Foods">
-      <img src={foodData.photo_url} className="food_url" width="150px"/>
-      <p>{foodData.name}</p>
-      <p>type: {foodData.group}</p>
-      <p>address: {foodData.address}</p>
-      <p>description: {foodData.description}</p>
+    <div className= "Foods" id='hey'>
+      
       <Cards placeData={foodData} group={"Foods"}/>
     </div>
   )

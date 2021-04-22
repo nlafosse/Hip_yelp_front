@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-// import './Cards.css';
+import './Cards.css';
 
 export default function Cards ({ placeData , group }) {
     // if image_url is null us place holder image
