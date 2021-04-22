@@ -20,6 +20,7 @@ const Food = ({apiData, getApiData}) => {
   // }
 
   useEffect(() => {
+    
     getApiData("foods")
   }, [])
 
@@ -27,11 +28,7 @@ const Food = ({apiData, getApiData}) => {
 
   return (
     <div className= "Foods">
-      <img src={apiData.photo_url} className="food_url" width="150px"/>
-      <p>{apiData.name}</p>
-      {/* <p>type: {apiData.group}</p>
-      <p>address: {apiData.address}</p>
-      <p>description: {apiData.description}</p> */}
+    
       <Cards placeData={apiData} group={"Foods"}/>
     </div>
   )
