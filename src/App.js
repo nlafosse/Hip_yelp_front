@@ -46,11 +46,8 @@ export default function App () {
   }
   // We dont need to pull the data on page load
   // useEffect(() => {
-  //   getApiDate();
+  //   getApiData();
   // }, []);
-
-
-
 
   return (
     <Router>
@@ -58,6 +55,10 @@ export default function App () {
       <Switch>
         <Route exact path="/" render={()=> <Home />} />
         <Route exact path="/Foods" render={()=> <Foods apiData={apiData} getApiData={getApiData}/> } />
+        <Route 
+          path="/Foods/:id"
+          render={(routerProps) => <FoodDetail hotspot={apiData} routerProps={routerProps}/>}
+        />
       </Switch>
     </Router>
   )
