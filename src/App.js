@@ -57,17 +57,7 @@ export default function App () {
       <Navbar></Navbar>
       <Switch>
         <Route exact path="/" render={()=> <Home />} />
-<<<<<<< HEAD
-        <Route exact path="/foods" render={()=> <Foods /> } />
-        <Route exact path="/foods/:id" render={(routerProps) => {
-          const hotspot = [...apiData].filter(
-            (h) => h.id === routerProps.match.params.id
-          );
-          return <FoodDetail {...routerProps} hotspot={hotspot[0]} />
-        }} />
-=======
         <Route exact path="/Foods" render={()=> <Foods apiData={apiData} getApiData={getApiData}/> } />
->>>>>>> c2c5323919a069ad6303e7926315a98e93b70a96
       </Switch>
     </Router>
   )
