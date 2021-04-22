@@ -44,9 +44,9 @@ export default function App () {
     }
   }
   // We dont need to pull the data on page load
-  useEffect(() => {
-    getApiData();
-  }, []);
+  // useEffect(() => {
+  //   getApiDate();
+  // }, []);
 
 
 

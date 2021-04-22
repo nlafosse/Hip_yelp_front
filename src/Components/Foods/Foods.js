@@ -20,6 +20,7 @@ const Food = ({apiData, getApiData}) => {
   // }
 
   useEffect(() => {
+    
     getApiData("foods")
   }, [])
 
