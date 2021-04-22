@@ -11,7 +11,7 @@ const Home = () => {
                     <Link to="">
                         <h2>Food</h2>
                         <div className={homeStyles.imgContainer}>
-                            <img src={placeholder} />
+                            <img className={homeStyles.homeImg} src={placeholder} />
                         </div>
                     </Link>
                 </div>
@@ -19,7 +19,7 @@ const Home = () => {
                     <Link to="">
                         <h2>Drinks</h2>
                         <div className={homeStyles.imgContainer}>
-                            <img src={placeholder} />
+                            <img className={homeStyles.homeImg} src={placeholder} />
                         </div>
                     </Link>
                 </div>
