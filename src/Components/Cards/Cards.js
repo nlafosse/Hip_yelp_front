@@ -9,7 +9,7 @@ export default function Cards ({ placeData , group }) {
         return(
                 <div key={i}>
                 <Link className="card" to={`/${group}/${place.id}`}>
-                <img  src={place.photo_url} alt={"image"}  onError={(event) => {
+                <img className="card_img" src={place.photo_url} alt={"image"}  onError={(event) => {
                     event.target.src = '' }} />
                     <h2 className="cards_text">{place.name}</h2>         
                 </Link>
