@@ -10,7 +10,7 @@
   flex-wrap: wrap;
 }
 .cards:hover {
-    
+    top: -10px;
 }
 
 .cards_text {
