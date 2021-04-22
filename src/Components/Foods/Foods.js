@@ -7,9 +7,9 @@ const Food = (props) => {
   const [params] = match;
   const{foodId} = params;
 
-  const [foodData, setFoodData] = useState(mockDataFoods)
+  const [foodData, setFoodData] = useState(mockDataFoods);
 
-  const getFoodData = async => {
+  const getFoodData = async () => {
     try {
       const res = await fetch("https://hotspot1.herokuapp.com/foods/" + foodId)
       const data = await res.json();
