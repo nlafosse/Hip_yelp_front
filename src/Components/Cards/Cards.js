@@ -8,7 +8,7 @@ export default function Cards ({ placeData , group }) {
     {placeData.map((place,i)=> {
         return(
                 <div key={i}>
-                <Link to={`/${group}/${place.id}`}>
+                <Link className="card" to={`/${group}/${place.id}`}>
                 <img  src={place.photo_url} alt={"image"}  onError={(event) => {
                     event.target.src = '' }} />
                     <h2 className="cards_text">{place.name}</h2>         
