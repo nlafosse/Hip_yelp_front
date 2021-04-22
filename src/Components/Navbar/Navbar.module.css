@@ -1,0 +1,22 @@
+.navbarHeader {
+    background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(6,4,0,1) 100%);
+}
+
+.navbarNav {
+    display: flex;
+    justify-content: center;
+}
+
+.navItem {
+    color: white;
+    margin: 10px 15px;
+    padding: 2px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navItem:hover {
+    background-color: rgba(255,255,255,0.5);
+    
+}
