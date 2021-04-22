@@ -34,9 +34,9 @@ export default function App () {
     endpointdrinkS: "drinks"
   };
 
-  const getApiDate = async () => { 
+  const getApiData = async (param) => { 
     try {
-      const res = await fetch(`https://hotspot1.herokuapp.com/${apiEndpoint.endpointfoods}/`);
+      const res = await fetch(`https://hotspot1.herokuapp.com/${param}/`);
       const data = await res.json();
       setApiData(data)
       console.log("work", res, apiData)
@@ -44,9 +44,10 @@ export default function App () {
       console.log(err);
     }
   }
-  useEffect(() => {
-    getApiDate();
-  }, []);
+  // We dont need to pull the data on page load
+  // useEffect(() => {
+  //   getApiDate();
+  // }, []);
 
 
 
@@ -56,6 +57,7 @@ export default function App () {
       <Navbar></Navbar>
       <Switch>
         <Route exact path="/" render={()=> <Home />} />
+<<<<<<< HEAD
         <Route exact path="/foods" render={()=> <Foods /> } />
         <Route exact path="/foods/:id" render={(routerProps) => {
           const hotspot = [...apiData].filter(
@@ -63,6 +65,9 @@ export default function App () {
           );
           return <FoodDetail {...routerProps} hotspot={hotspot[0]} />
         }} />
+=======
+        <Route exact path="/Foods" render={()=> <Foods apiData={apiData} getApiData={getApiData}/> } />
+>>>>>>> c2c5323919a069ad6303e7926315a98e93b70a96
       </Switch>
     </Router>
   )
