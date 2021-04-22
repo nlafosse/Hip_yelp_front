@@ -1,0 +1,82 @@
+[
+  {
+      "id": 1,
+      "name": "Mominette Bistro",
+      "group": "French",
+      "address": "221 Knickerbocker ave, Brooklyn, NY 11237",
+      "description": "Modern French Bistor serving up classic french cuisine.",
+      "photo_url": "https://s3.amazonaws.com/bushwickdaily.com/post_image-image/l6ZtcYY5ZOWJaJDsxyQY8w.jpg"
+  },
+  {
+      "id": 2,
+      "name": "Carmenta's",
+      "group": "Italian",
+      "address": "50 starr st, Brooklyn, NY 11237",
+      "description": "Italian speciality sandwiches and handmade pasta",
+      "photo_url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=600,format=auto,quality=50/https://cdn.doordash.com/media/store%2Fheader%2F163448.jpg"
+  },
+  {
+      "id": 3,
+      "name": "Millie's Cuban Cafe",
+      "group": "Cuban",
+      "address": "151 wilson ave, Brooklyn, NY 11237",
+      "description": "Casual Latin counter-serve cafe offering Cubanos, ropa veijas & sweep plantains.",
+      "photo_url": "https://atasteofmylife.fr/wp-content/uploads/2018/11/brooklyn_bushwick_07.jpg"
+  },
+  {
+      "id": 4,
+      "name": "Sally Roots",
+      "group": "Carribbean",
+      "address": "195 Wyckoff ave, Brooklyn, NY 11237",
+      "description": "Casual hangout offering Caribbean plates, rum cocktails & frozen drinks, plus a patio.",
+      "photo_url": "https://s3-media3.fl.yelpcdn.com/bphoto/KvO6-IUnFcSO9I1kZFYwXg/o.jpg"
+  },
+  {
+      "id": 5,
+      "name": "Amaranto",
+      "group": "Mexican",
+      "address": "887 Hart st, Brooklyn, NY 11237",
+      "description": "Relaxed, family-run joint offering a creative spin on Mexican classics, plus sangria & cocktails.",
+      "photo_url": "https://static01.nyt.com/images/2015/12/02/dining/02HUNGRY-AMARANTO-slide-QJMU/02HUNGRY-AMARANTO-slide-QJMU-superJumbo.jpg?quality=75&auto=webp&disable=upscale"
+  },
+  {
+      "id": 6,
+      "name": "Le Garage",
+      "group": "French",
+      "address": "157 Suydam st, Brooklyn, NY 11221",
+      "description": "Seasonal French dishes, artisanal cocktails & European wines offered in a modern, casual setting.",
+      "photo_url": "https://i.pinimg.com/originals/d1/ed/3c/d1ed3c53ab8a245431a3c2713e42c19c.jpg"
+  },
+  {
+      "id": 7,
+      "name": "Syndicated Bar Theater Kitchen",
+      "group": "Gastropub",
+      "address": "40 Bogart st, Brooklyn, NY 11206",
+      "description": "Movie theater showing recent classics, plus a restaurant & bar serving American fare & cocktails.",
+      "photo_url": "https://syndicatedbk.com/wp-content/uploads/2018/10/IMG_9306.jpg"
+  },
+  {
+      "id": 8,
+      "name": "Roberta's",
+      "group": "Italian",
+      "address": "261 Moore st, Brooklyn 11206",
+      "description": "Classic oven baked Neapolitan pizzeria with classic Italian eatery",
+      "photo_url": "https://media.cntraveler.com/photos/59c1297fb4344a106ecaa529/master/w_1200,c_limit/Robertas_PizzaMargherita2.jpg"
+  },
+  {
+      "id": 9,
+      "name": "Bunna Cafe",
+      "group": "Ethiopian",
+      "address": "1084 Flushing ave, Brooklyn, NY 11237",
+      "description": "Bustling outpost provides Ethiopian vegan fare, cocktails & regular events in a low-lit dining room.",
+      "photo_url": "https://images.happycow.net/venues/1024/34/27/hcmp34274_155885.jpeg"
+  },
+  {
+      "id": 10,
+      "name": "Faro",
+      "group": "Italian",
+      "address": "436 Jefferson st, Brooklyn, NY 11237",
+      "description": "Rustic Italian place serving housemade pastas & wood-fired dishes in a renovated warehouse.",
+      "photo_url": "http://www.farobk.com/resources/restaurant-section-image-1.jpg"
+  }
+]
