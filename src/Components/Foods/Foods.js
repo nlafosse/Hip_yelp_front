@@ -2,37 +2,37 @@ import React from "react";
 import { useState, useEffect } from "react";
 import mockDataFoods from "../../mockDataFoods.json"
 import Cards from "../Cards/Cards"
-const Food = () => {
+const Food = ({apiData, getApiData}) => {
   // const {match} = props;
   // const [params] = match;
   // const{foodId} = params;
 
-  const [foodData, setFoodData] = useState(mockDataFoods);
+  // const [foodData, setFoodData] = useState(mockDataFoods);
 
-  const getFoodData = async () => {
-    try {
-      const res = await fetch("https://hotspot1.herokuapp.com/foods/")
-      const data = await res.json();
-      setFoodData(data)
-    } catch (err) {
-      console.log(err)
-    }
-  }
+  // const getFoodData = async () => {
+  //   try {
+  //     const res = await fetch("https://hotspot1.herokuapp.com/foods/")
+  //     const data = await res.json();
+  //     setFoodData(data)
+  //   } catch (err) {
+  //     console.log(err)
+  //   }
+  // }
 
   useEffect(() => {
-    getFoodData();
+    getApiData("foods")
   }, [])
 
   // console.log(foodData)
 
   return (
     <div className= "Foods">
-      <img src={foodData.photo_url} className="food_url" width="150px"/>
-      <p>{foodData.name}</p>
-      <p>type: {foodData.group}</p>
-      <p>address: {foodData.address}</p>
-      <p>description: {foodData.description}</p>
-      <Cards placeData={foodData} group={"Foods"}/>
+      <img src={apiData.photo_url} className="food_url" width="150px"/>
+      <p>{apiData.name}</p>
+      <p>type: {apiData.group}</p>
+      <p>address: {apiData.address}</p>
+      <p>description: {apiData.description}</p>
+      <Cards placeData={apiData} group={"Foods"}/>
     </div>
   )
 }
