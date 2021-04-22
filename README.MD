@@ -29,7 +29,8 @@ django-admin startproject
 please visit https://docs.djangoproject.com/en/3.2/
 
 ## Troubleshooting
-Error: psql: FATAL: role “postgres” does not exist Solution: Check out this StackOverflow article.
+Error: psql: FATAL: role “postgres” does not exist 
+Solution: Check out this https://stackoverflow.com/questions/15301826/psql-fatal-role-postgres-does-not-exist.
 
 Error: psql: error: FATAL: Peer authentication failed for user "postgres" Solution:
 
