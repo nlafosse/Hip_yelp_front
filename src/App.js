@@ -1,7 +1,6 @@
 import './App.css';
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom'
-import Other from './Other'
-import Home from './Home'
+import Home from './Components/Home/Home'
 import { useState, useEffect } from 'react'
 // Save the Component, key and path in an array of objects for each Route
 // You could write all routes by hand but I'm lazy annd this lets me use
@@ -12,16 +11,6 @@ import { useState, useEffect } from 'react'
 
 
 const routes = [
-  {
-    Component: Other,
-    key: 'Other',
-    path: '/other'
-  },
-  {
-    Component: Other,
-    key: 'Another',
-    path: '/another'
-  },
   {
     Component: Home,
     key: 'Home',
