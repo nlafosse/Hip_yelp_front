@@ -1,10 +1,10 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch,} from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Foods from './Components/Foods/Foods'
-import { useState, useEffect, Component } from 'react'
+import { useState} from 'react'
 import Navbar from './Components/Navbar/Navbar'
-import Cards from './Components/Cards/Cards'
+
 import FoodDetail from './Components/FoodDetail/FoodDetail';
 import Drinks from './Components/Drinks/Drinks'
 import DrinkDetail from './Components/DrinkDetail/DrinkDetail'
