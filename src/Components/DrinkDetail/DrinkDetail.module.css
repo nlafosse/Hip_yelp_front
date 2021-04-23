@@ -1,15 +1,23 @@
-html {
+.drinks {
+  border: 1PX solid black;
+  text-align: center;
+  position: relative;
+  padding: 5px;
+  margin: 35px;
+}
+
+.infoContainer {
   border: 1px solid black;
 }
 
-div {
+.drinkUrl {
   border: 1px solid black;
 }
 
-.info-container {
+.basicInfo {
   border: 1px solid black;
 }
 
-.basic-info {
+.homeLink {
   border: 1px solid black;
 }

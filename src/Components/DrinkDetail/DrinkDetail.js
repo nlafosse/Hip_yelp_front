@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
+import * as drinkDetailStyle from './DrinkDetail.module.css'
 
 export default function DrinkDetail ({routerProps, hotspot}) {
   console.log(routerProps)
@@ -17,17 +18,17 @@ export default function DrinkDetail ({routerProps, hotspot}) {
   }
 
   return (
-    <div className="drinks">
+    <div className={drinkDetailStyle.drinks}>
       <h1>{selected[0].name}</h1>
-        <div className="info-container">
-          <img src={selected[0].photo_url} className="drink_url" width="400px"/>
-          <div className="basic-info">
+        <div className={drinkDetailStyle.infoContainer}>
+          <img src={selected[0].photo_url} className={drinkDetailStyle.drinkUrl} width="400px"/>
+          <div className={drinkDetailStyle.basicInfo}>
             <p>Type: {selected[0].group}</p>
-            <p>{selected[0].description}</p>
+            <p>Description: {selected[0].description}</p>
             <p>Address: {selected[0].address}</p>
           </div>
         </div>
-      <div className="home-link">
+      <div className={drinkDetailStyle.homeLink}>
         <Link to="/">Home</Link>
       </div>
     </div>
