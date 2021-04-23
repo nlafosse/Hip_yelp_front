@@ -10,6 +10,12 @@ export default function DrinkDetail ({routerProps, hotspot}) {
 
   console.log(selected)
 
+  if (selected[0] === undefined) {
+    return (
+      <h1>Loading...</h1>
+    )
+  }
+
   return (
     <div className="drinks">
       <h1>{selected[0].name}</h1>
