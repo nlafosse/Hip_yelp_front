@@ -1,13 +1,15 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch,} from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Foods from './Components/Foods/Foods'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import Navbar from './Components/Navbar/Navbar'
-import Cards from './Components/Cards/Cards'
-import FoodDetail from './Components/FoodDetail/FoodDetail';
+
+import FoodDetail from './Components/FoodDetail/FoodDetail'
 import Map from './Components/Map/Map';
 import FoodForm from './Components/Forms/FoodForm';
+import Drinks from './Components/Drinks/Drinks'
+import DrinkDetail from './Components/DrinkDetail/DrinkDetail'
 // Save the Component, key and path in an array of objects for each Route
 // You could write all routes by hand but I'm lazy annd this lets me use
 // the map method to just loop over them and make my routes
@@ -61,8 +63,14 @@ export default function App () {
           path="/Foods/:id"
           render={(routerProps) => <FoodDetail hotspot={apiData} routerProps={routerProps}/>}
         />
+
         <Route exact path="/map" render={() => <Map />} />
         <Route exact path="/Food/Add" render={() => <FoodForm />} />
+        <Route exact path="/Drinks" render={()=> <Drinks apiData={apiData} getApiData={getApiData}/> } />
+        <Route 
+          path="/Drinks/:id"
+          render={(routerProps) => <DrinkDetail hotspot={apiData} routerProps={routerProps}/>}
+        />
       </Switch>
     </Router>
   )
