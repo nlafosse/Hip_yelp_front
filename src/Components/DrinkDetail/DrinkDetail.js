@@ -21,15 +21,15 @@ export default function DrinkDetail ({routerProps, hotspot}) {
     <div className={drinkDetailStyle.drinks}>
       <h1>{selected[0].name}</h1>
         <div className={drinkDetailStyle.infoContainer}>
-          <img src={selected[0].photo_url} className={drinkDetailStyle.drinkUrl} width="400px"/>
+          <img src={selected[0].photo_url} className={drinkDetailStyle.drinkPhoto} width="400px"/>
           <div className={drinkDetailStyle.basicInfo}>
             <p>Type: {selected[0].group}</p>
             <p>Description: {selected[0].description}</p>
             <p>Address: {selected[0].address}</p>
           </div>
         </div>
-      <div className={drinkDetailStyle.homeLink}>
-        <Link to="/">Home</Link>
+      <div className={drinkDetailStyle.home}>
+        <Link to="/" className={drinkDetailStyle.homeLink}>Home</Link>
       </div>
     </div>
   )
