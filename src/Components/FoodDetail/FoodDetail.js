@@ -21,7 +21,7 @@ export default function FoodDetail ({routerProps, hotspot}) {
     <div className="foods">
       <h1>{selected[0].name}</h1>
         <div className="info-container">
-          <img src={selected[0].photo_url} className="food_url" width="400px"/>
+          <img src={selected[0].photo_url} alt="selected place" className="food_url" width="400px"/>
           <div className="basic-info">
             <p>Type: {selected[0].group}</p>
             <p>{selected[0].description}</p>
