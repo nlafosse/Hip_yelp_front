@@ -1,15 +1,48 @@
-html {
+.drinks {
+  font-family: 'Courier New', Courier, monospace;
+  border: 1PX solid black;
+  text-align: center;
+  position: relative;
+  padding: 5px;
+  margin: 35px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.infoContainer {
+  text-align: center;
+  width: 500px;
+  /* border: 1px solid black; */
+  box-shadow: 5px 2px 15px #d2d1d1;
+}
+
+.drinkPhoto {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 20px;
+  box-shadow: 5px 2px 15px #d2d1d1;
+}
+
+.basicInfo {
+  padding: 10px;
+  margin: 10px 45px 30px 45px;
+  /* border: 1px solid black; */
+  box-shadow: 5px 2px 15px #d2d1d1;
+}
+
+.homeLink {
+  margin-top: 20px; 
+  color: black;
+  /* visibility: hidden; */
+  text-decoration: none;
   border: 1px solid black;
 }
 
-div {
-  border: 1px solid black;
-}
+/* .fa_glass {
+  width: 100px;
+  height: 100px;
+} */
 
-.info-container {
-  border: 1px solid black;
-}
-
-.basic-info {
-  border: 1px solid black;
-}
