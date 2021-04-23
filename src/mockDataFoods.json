@@ -5,6 +5,7 @@
       "group": "French",
       "address": "221 Knickerbocker ave, Brooklyn, NY 11237",
       "description": "Modern French Bistor serving up classic french cuisine.",
+      "coordiates": [{"latitude": 40.701157}, {"longitude": -73.925808}],
       "photo_url": "https://s3.amazonaws.com/bushwickdaily.com/post_image-image/l6ZtcYY5ZOWJaJDsxyQY8w.jpg"
   },
   {
