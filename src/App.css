@@ -84,3 +84,29 @@
 .content-wrap {
   flex: 1;
 }
+
+.Newsletter {
+  background-color: rgb(230, 172, 172);
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=checkbox] {
+  margin-top: 12px;
+}
+
+input[type=submit] {
+  background-color: #da3876;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.6;
+}

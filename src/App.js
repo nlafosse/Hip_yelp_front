@@ -12,7 +12,8 @@ import DrinkDetail from './Components/DrinkDetail/DrinkDetail'
 import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
 import Team from './Components/Team/Team';
-import Story from './Components/Story/Story'
+import Story from './Components/Story/Story';
+import Newsletter from './Components/Newsletter/Newsletter';
 
 
 // Save the Component, key and path in an array of objects for each Route
@@ -72,6 +73,7 @@ export default function App () {
           <Route exact path="/About" render={()=> <About />} />
           <Route exact path="/Team" render={()=> <Team />} />
           <Route exact path="/Story" render={()=> <Story />} />
+          <Route exact path="/Newsletter" render={()=> <Newsletter />} />
           <Route exact path="/Foods" render={()=> <Foods apiData={apiData} getApiData={getApiData}/> } />
           <Route 
             path="/Foods/:id"

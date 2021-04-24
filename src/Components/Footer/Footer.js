@@ -42,7 +42,7 @@ return (
 		<Row>
 		<Column>
 			<Heading>About Us</Heading>
-			<FooterLink href="/Story">Our Story</FooterLink>
+			<FooterLink href="/Storyç">Our Story</FooterLink>
 			<FooterLink href="/Team">Our Team</FooterLink>
 			<FooterLink href="#">Testimonials</FooterLink>
 		</Column>
@@ -56,7 +56,7 @@ return (
 			<Heading>Contact Us</Heading>
 			<FooterLink href="#">East Coast</FooterLink>
 			<FooterLink href="#">West Coast</FooterLink>
-			<FooterLink href="#">All Location</FooterLink>
+			<FooterLink href="/Newsletter">Newsletter</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Social Media</Heading>
