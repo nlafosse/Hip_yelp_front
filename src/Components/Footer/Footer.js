@@ -42,7 +42,7 @@ return (
 		<Row>
 		<Column>
 			<Heading>About Us</Heading>
-			<FooterLink href="#">Our Story</FooterLink>
+			<FooterLink href="/Story">Our Story</FooterLink>
 			<FooterLink href="/Team">Our Team</FooterLink>
 			<FooterLink href="#">Testimonials</FooterLink>
 		</Column>
