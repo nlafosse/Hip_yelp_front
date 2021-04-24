@@ -1,0 +1,28 @@
+.col {
+    color: white;
+    background-color: #4ef0e2;
+    padding-top: .6em;
+    padding-bottom: 0em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+h4 {
+  color: rgb(0, 14, 4);
+  padding: 0em;
+}
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+ul {
+  color: brown;
+  list-style: none;
+  font-size: 16px;
+  padding: 1em;
+  padding-bottom: 02em;
+  padding-top: 01em;
+}

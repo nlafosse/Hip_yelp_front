@@ -2,12 +2,14 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Foods from './Components/Foods/Foods'
+import * as ReactBootStrap from "react-bootstrap";
 import { useState, useEffect, Component } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Cards from './Components/Cards/Cards'
 import FoodDetail from './Components/FoodDetail/FoodDetail';
 import Drinks from './Components/Drinks/Drinks'
 import DrinkDetail from './Components/DrinkDetail/DrinkDetail'
+import Footer from './Components/Footer/Footer';
 
 // Save the Component, key and path in an array of objects for each Route
 // You could write all routes by hand but I'm lazy annd this lets me use
@@ -51,23 +53,30 @@ export default function App () {
   // useEffect(() => {
   //   getApiData();
   // }, []);
-
   return (
-    <Router>
-      <Navbar></Navbar>
-      <Switch>
-        <Route exact path="/" render={()=> <Home />} />
-        <Route exact path="/Foods" render={()=> <Foods apiData={apiData} getApiData={getApiData}/> } />
-        <Route 
-          path="/Foods/:id"
-          render={(routerProps) => <FoodDetail hotspot={apiData} routerProps={routerProps}/>}
-        />
+    <div className="page-container">
+    <div className="content-wrap">
+     <div>
+      <Router>
+        <Navbar></Navbar>
+        <Switch>
+          <Route exact path="/" render={()=> <Home />} />
+          <Route exact path="/Foods" render={()=> <Foods apiData={apiData} getApiData={getApiData}/> } />
+          <Route 
+            path="/Foods/:id"
+            render={(routerProps) => <FoodDetail hotspot={apiData} routerProps={routerProps}/>}
+            />
         <Route exact path="/Drinks" render={()=> <Drinks apiData={apiData} getApiData={getApiData}/> } />
         <Route 
           path="/Drinks/:id"
           render={(routerProps) => <DrinkDetail hotspot={apiData} routerProps={routerProps}/>}
         />
+        {/* <Route exact path="/Forms" render={() => <Forms apiData={apiData} getApiData={getApiData}/> } /> */}
       </Switch>
     </Router>
+    <Footer />
+    </div>
+    </div>
+  </div>
   )
 }
