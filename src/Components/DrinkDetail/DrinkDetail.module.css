@@ -1,6 +1,7 @@
 .drinks {
   font-family: 'Courier New', Courier, monospace;
-  border: 1PX solid black;
+  color: rgb(70, 70, 70);
+  /* border: 1PX solid black; */
   text-align: center;
   position: relative;
   padding: 5px;
@@ -20,7 +21,7 @@
 }
 
 .drinkPhoto {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   padding: 5px;
   margin: 20px;
   box-shadow: 5px 2px 15px #d2d1d1;
@@ -33,12 +34,25 @@
   box-shadow: 5px 2px 15px #d2d1d1;
 }
 
-.homeLink {
-  margin-top: 20px; 
-  color: black;
-  /* visibility: hidden; */
-  text-decoration: none;
-  border: 1px solid black;
+.btn {
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  border: 1px solid #293A57;
+  border-radius: 5%;
+  background-color: white;
+  color: #293A57;
+  padding: 10px 28px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.btn:hover{
+  background-color: #293A57;
+  color: white;
+}
+
+.home {
+  margin-top: 25px;
 }
 
 /* .fa_glass {
