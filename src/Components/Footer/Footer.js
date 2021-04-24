@@ -48,9 +48,9 @@ return (
 		</Column>
 		<Column>
 			<Heading>Services</Heading>
-			<FooterLink href="#">Foods</FooterLink>
-			<FooterLink href="#">Drink</FooterLink>
-			<FooterLink href="#">Night Life</FooterLink>
+			<FooterLink href="/Foods">Foods</FooterLink>
+			<FooterLink href="/Drinks">Drink</FooterLink>
+			<FooterLink href="/Drinks">Night Life</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Contact Us</Heading>
