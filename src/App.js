@@ -10,6 +10,9 @@ import FoodDetail from './Components/FoodDetail/FoodDetail';
 import Drinks from './Components/Drinks/Drinks'
 import DrinkDetail from './Components/DrinkDetail/DrinkDetail'
 import Footer from './Components/Footer/Footer';
+import About from './Components/About/About';
+import Team from './Components/Team/Team'
+
 
 // Save the Component, key and path in an array of objects for each Route
 // You could write all routes by hand but I'm lazy annd this lets me use
@@ -25,6 +28,10 @@ const routes = [
     key: 'Home',
     path: '/',
     
+    Component: About,
+    key: 'About',
+    path: '/About',
+
     Component: Foods,
     key: 'Foods',
     path: '/Foods'
@@ -61,6 +68,8 @@ export default function App () {
         <Navbar></Navbar>
         <Switch>
           <Route exact path="/" render={()=> <Home />} />
+          <Route exact path="/About" render={()=> <About />} />
+          <Route exact path="/Team" render={()=> <Team />} />
           <Route exact path="/Foods" render={()=> <Foods apiData={apiData} getApiData={getApiData}/> } />
           <Route 
             path="/Foods/:id"
@@ -71,9 +80,10 @@ export default function App () {
           path="/Drinks/:id"
           render={(routerProps) => <DrinkDetail hotspot={apiData} routerProps={routerProps}/>}
         />
-        {/* <Route exact path="/Forms" render={() => <Forms apiData={apiData} getApiData={getApiData}/> } /> */}
+       
       </Switch>
     </Router>
+    
     <Footer />
     </div>
     </div>

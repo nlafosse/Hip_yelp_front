@@ -43,13 +43,13 @@ return (
 		<Column>
 			<Heading>About Us</Heading>
 			<FooterLink href="#">Our Story</FooterLink>
-			<FooterLink href="#">Our Team</FooterLink>
+			<FooterLink href="/Team">Our Team</FooterLink>
 			<FooterLink href="#">Testimonials</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Services</Heading>
 			<FooterLink href="/Foods">Foods</FooterLink>
-			<FooterLink href="/Drinks">Drink</FooterLink>
+			<FooterLink href="/Drinks">Drinks</FooterLink>
 			<FooterLink href="/Drinks">Night Life</FooterLink>
 		</Column>
 		<Column>
