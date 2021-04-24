@@ -29,7 +29,7 @@ export default function DrinkDetail ({routerProps, hotspot}) {
           </div>
         </div>
       <div className={drinkDetailStyle.home}>
-        <Link to="/Drinks" className={drinkDetailStyle.homeLink}><button type="button" className={drinkDetailStyle.btn}>BACK</button></Link>
+        <Link to="/Drinks"><button type="button" className={drinkDetailStyle.btn}>BACK</button></Link>
       </div>
     </div>
   )
