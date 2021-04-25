@@ -7,7 +7,7 @@ import Navbar from './Components/Navbar/Navbar'
 
 import FoodDetail from './Components/FoodDetail/FoodDetail'
 import Map from './Components/Map/Map';
-import FoodForm from './Components/Forms/FoodForm';
+import Form from './Components/Forms/Form';
 import Drinks from './Components/Drinks/Drinks'
 import DrinkDetail from './Components/DrinkDetail/DrinkDetail'
 // Save the Component, key and path in an array of objects for each Route
@@ -65,7 +65,7 @@ export default function App () {
         />
 
         <Route exact path="/map" render={() => <Map apiData={apiData} getApiData={getApiData}/>} />
-        <Route exact path="/Food/Add" render={() => <FoodForm />} />
+        <Route exact path="/Add" render={() => <Form />} />
         <Route exact path="/Drinks" render={()=> <Drinks apiData={apiData} getApiData={getApiData}/> } />
         <Route 
           path="/Drinks/:id"
