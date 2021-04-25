@@ -23,13 +23,13 @@ export default function DrinkDetail ({routerProps, hotspot}) {
         <div className={drinkDetailStyle.infoContainer}>
           <img src={selected[0].photo_url} className={drinkDetailStyle.drinkPhoto} width="400px"/>
           <div className={drinkDetailStyle.basicInfo}>
-            <p>Type: {selected[0].group}</p>
-            <p>Description: {selected[0].description}</p>
-            <p>Address: {selected[0].address}</p>
+            <p>{selected[0].group}</p>
+            <p>{selected[0].description}</p>
+            <p>{selected[0].address}</p>
           </div>
         </div>
       <div className={drinkDetailStyle.home}>
-        <Link to="/" className={drinkDetailStyle.homeLink}>Home</Link>
+        <Link to="/Drinks"><button type="button" className={drinkDetailStyle.btn}>BACK</button></Link>
       </div>
     </div>
   )

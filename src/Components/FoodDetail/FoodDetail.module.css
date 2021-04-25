@@ -1,4 +1,4 @@
-.drinks {
+.foods {
   font-family: 'Courier New', Courier, monospace;
   color: rgb(70, 70, 70);
   /* border: 1PX solid black; */
@@ -20,7 +20,8 @@
   box-shadow: 5px 2px 15px #d2d1d1;
 }
 
-.drinkPhoto {
+.foodPhoto {
+  width: 400px;
   /* border: 1px solid #ccc; */
   padding: 5px;
   margin: 20px;
@@ -56,7 +57,7 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .drinks {
+  .foods {
     font-family: 'Courier New', Courier, monospace;
     color: rgb(70, 70, 70);
     /* border: 1PX solid black; */
@@ -78,7 +79,7 @@
     box-shadow: 5px 2px 15px #d2d1d1;
   }
   
-  .drinkPhoto {
+  .foodPhoto {
     width: 275px;
     /* border: 1px solid black; */
     padding: 5px;
@@ -116,4 +117,3 @@
     margin-top: 25px;
   }
 }
-
