@@ -12,13 +12,15 @@ function Newsletter() {
     <br />
     <div>
     <label>
-        <input type="checkbox" checked="checked" checked="unckecked" name="subscribe" />Daily Newsletter
+        <input type="checkbox" checked="checked" name="subscribe" />Daily Newsletter
     </label>
     <input type="submit" value="Subscribe" />
     </div>
     </div>
+    
     );
   }
+
 
   export default Newsletter;
   

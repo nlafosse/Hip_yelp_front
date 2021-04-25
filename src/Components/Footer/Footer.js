@@ -44,7 +44,7 @@ return (
 			<Heading>About Us</Heading>
 			<FooterLink href="/Storyç">Our Story</FooterLink>
 			<FooterLink href="/Team">Our Team</FooterLink>
-			<FooterLink href="#">Testimonials</FooterLink>
+			<FooterLink href="/Testimonials">Testimonials</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Services</Heading>

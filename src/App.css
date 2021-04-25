@@ -92,7 +92,7 @@
 input[type=text], input[type=submit] {
   width: 100%;
   padding: 10px;
-  margin: 6px 0;
+  margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -102,11 +102,17 @@ input[type=checkbox] {
 }
 
 input[type=submit] {
-  background-color: #da3876;
+  background-color: #18cf4f;
   color: white;
   border: none;
 }
 
 input[type=submit]:hover {
   opacity: 0.6;
+}
+.Tyler {
+  height: 222px;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  padding: 0em;
 }
