@@ -8,6 +8,7 @@ const Navbar = () => {
                 <Link className={navStyles.navItem} to="/" exact >Home</Link>
                 <Link className={navStyles.navItem} to="/Foods"> Food </Link>
                 <Link className={navStyles.navItem} to="/Drinks"> Drinks </Link>
+                <Link className={navStyles.navItem} to="/Map">Map</Link>
             </nav>
         </header>
     )
