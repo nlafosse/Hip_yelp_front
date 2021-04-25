@@ -10,6 +10,7 @@ import Map from './Components/Map/Map';
 import Form from './Components/Forms/Form';
 import Drinks from './Components/Drinks/Drinks'
 import DrinkDetail from './Components/DrinkDetail/DrinkDetail'
+import SuccessfulAdd from './Components/SuccessfulAdd/SuccessfulAdd';
 // Save the Component, key and path in an array of objects for each Route
 // You could write all routes by hand but I'm lazy annd this lets me use
 // the map method to just loop over them and make my routes
@@ -71,6 +72,7 @@ export default function App () {
           path="/Drinks/:id"
           render={(routerProps) => <DrinkDetail hotspot={apiData} routerProps={routerProps}/>}
         />
+        <Route exact path="/Success" render={() => <SuccessfulAdd />} />
       </Switch>
     </Router>
   )
