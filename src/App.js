@@ -64,7 +64,7 @@ export default function App () {
           render={(routerProps) => <FoodDetail hotspot={apiData} routerProps={routerProps}/>}
         />
 
-        <Route exact path="/map" render={() => <Map />} />
+        <Route exact path="/map" render={() => <Map apiData={apiData} getApiData={getApiData}/>} />
         <Route exact path="/Food/Add" render={() => <FoodForm />} />
         <Route exact path="/Drinks" render={()=> <Drinks apiData={apiData} getApiData={getApiData}/> } />
         <Route 
