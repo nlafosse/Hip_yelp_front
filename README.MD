@@ -1,8 +1,13 @@
 ## Table of content
-##### Table of Contents  
+[Header](#headers)  
 [Descriptions](#description)  
-[Emphasis](#setupandinstallation)  
-...snip...    
+[Emphasis](#setupandinstallation) 
+[FoodPage](#food page)  
+[Drink Page](#drink page) 
+[Support](#support)  
+[Troubleshooting](#troubleshooting) 
+
+
 <a name="description"/>
 ## Headers
 
