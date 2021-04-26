@@ -1,10 +1,6 @@
 import React from "react";
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
-=======
-import { Link } from 'react-router-dom'
 import * as foodDetailStyle from './FoodDetail.module.css'
->>>>>>> 751537d84dc9a8fc772f8c06af942989d1f157f3
 
 
 export default function FoodDetail ({routerProps, hotspot}) {

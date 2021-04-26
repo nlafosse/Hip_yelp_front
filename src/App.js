@@ -1,24 +1,21 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch,} from 'react-router-dom'
-import Home from './Components/Home/Home'
-import Foods from './Components/Foods/Foods'
-import * as ReactBootStrap from "react-bootstrap";
-import { useState, useEffect, Component } from 'react'
-import { useState} from 'react'
-import Navbar from './Components/Navbar/Navbar'
-
-import FoodDetail from './Components/FoodDetail/FoodDetail'
+import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import Home from './Components/Home/Home';
+import Foods from './Components/Foods/Foods';
+import { useState} from 'react';
+import Navbar from './Components/Navbar/Navbar';
+import FoodDetail from './Components/FoodDetail/FoodDetail';
 import Map from './Components/Map/Map';
 import Form from './Components/Forms/Form';
-import Drinks from './Components/Drinks/Drinks'
-import DrinkDetail from './Components/DrinkDetail/DrinkDetail'
+import Drinks from './Components/Drinks/Drinks';
+import DrinkDetail from './Components/DrinkDetail/DrinkDetail';
 import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
 import Team from './Components/Team/Team';
 import Story from './Components/Story/Story';
 import Newsletter from './Components/Newsletter/Newsletter';
 import Testimonials from './Components/Testimonials/Testimonials';
-import Contact from './Components/Contact/Contact'
+import Contact from './Components/Contact/Contact';
 
 
 import SuccessfulAdd from './Components/SuccessfulAdd/SuccessfulAdd';
@@ -72,6 +69,7 @@ export default function App () {
   //   getApiData();
   // }, []);
   return (
+    <Router>
     <div>
         <Navbar></Navbar>
         <Switch >
@@ -107,5 +105,6 @@ export default function App () {
     
     <Footer />
   </div>
+  </Router>
   )
 }
