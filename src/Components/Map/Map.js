@@ -5,7 +5,7 @@ import LocationPopup from './LocationPopup';
 
 
 
-const Map = ({ apiData, getApiData }) => {
+const Map = ({ apiData, getApiData, currentCategory }) => {
 
 const [viewport, setViewPort] = useState({
     latitude: 40.7128,
@@ -19,14 +19,13 @@ const [selected, setSelected] = useState(null);
 
 
 
-console.log('in map', apiData)
     return (
         <ReactMapGl 
         {...viewport}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_KEY} 
         onViewportChange={newViewport => setViewPort(newViewport)}>
         <Markers apiData={apiData} getApiData={getApiData} setSelected={setSelected}></Markers>
-        <LocationPopup selected={selected} setSelected={setSelected}></LocationPopup>
+        <LocationPopup selected={selected} setSelected={setSelected} currentCategory={currentCategory}></LocationPopup>
         </ReactMapGl>
     )
 }

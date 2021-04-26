@@ -33,6 +33,8 @@ const routes = [
 
 export default function App () {
   const [apiData, setApiData] = useState([]);
+  // I added this to keep track of whether the current search was food or drinks. This needed to be passed to the map for the location popups to link properly
+  const [currentCategory, setCurrentCategory] = useState("")
 
   const apiEndpoint = {
     endpointfoods: "foods",
@@ -40,6 +42,7 @@ export default function App () {
   };
 
   const getApiData = async (param) => { 
+    setCurrentCategory(param)
     try {
       const res = await fetch(`https://hotspot1.herokuapp.com/${param}/`);
       const data = await res.json();
@@ -65,8 +68,13 @@ export default function App () {
           render={(routerProps) => <FoodDetail hotspot={apiData} routerProps={routerProps}/>}
         />
 
-        <Route exact path="/map" render={() => <Map apiData={apiData} getApiData={getApiData}/>} />
+ 
+        <Route exact path="/map" render={() => <Map apiData={apiData} getApiData={getApiData} currentCategory={currentCategory}/>} />
+        <Route exact path="/Food/Add" render={() => <FoodForm />} />
+
+        
         <Route exact path="/Add" render={() => <Form />} />
+ 
         <Route exact path="/Drinks" render={()=> <Drinks apiData={apiData} getApiData={getApiData}/> } />
         <Route 
           path="/Drinks/:id"
