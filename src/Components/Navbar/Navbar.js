@@ -10,6 +10,8 @@ const Navbar = () => {
                 <Link className={navStyles.navItem} to="/Drinks"> Drinks </Link>
                 <Link className={navStyles.navItem} to="/About" exact > About Us </Link>
                 <Link className={navStyles.navItem} to="/Contact" exact > Contact Us</Link>
+                <Link className={navStyles.navItem} to="/Map">Map</Link>
+                <Link className={navStyles.navItem} to="/Add">Add New</Link>
             </nav>
         </header>
     )

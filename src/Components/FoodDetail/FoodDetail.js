@@ -1,5 +1,10 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
+=======
+import { Link } from 'react-router-dom'
+import * as foodDetailStyle from './FoodDetail.module.css'
+>>>>>>> 751537d84dc9a8fc772f8c06af942989d1f157f3
 
 
 export default function FoodDetail ({routerProps, hotspot}) {
@@ -18,18 +23,18 @@ export default function FoodDetail ({routerProps, hotspot}) {
   }
 
   return (
-    <div className="foods">
+    <div className={foodDetailStyle.foods}>
       <h1>{selected[0].name}</h1>
-        <div className="info-container">
-          <img src={selected[0].photo_url} className="food_url" width="400px"/>
-          <div className="basic-info">
-            <p>Type: {selected[0].group}</p>
+        <div className={foodDetailStyle.infoContainer}>
+          <img src={selected[0].photo_url} alt="selected place" className={foodDetailStyle.foodPhoto} width="400px"/>
+          <div className={foodDetailStyle.basicInfo}>
+            <p>{selected[0].group}</p>
             <p>{selected[0].description}</p>
-            <p>Address: {selected[0].address}</p>
+            <p>{selected[0].address}</p>
           </div>
         </div>
-      <div className="home-link">
-        <Link to="/">Home</Link>
+      <div className={foodDetailStyle.home}>
+        <Link to="/Foods"><button type="button" className={foodDetailStyle.btn}>BACK</button></Link>
       </div>
     </div>
   )
