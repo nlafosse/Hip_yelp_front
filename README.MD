@@ -2,13 +2,12 @@
 [Header](#headers)  
 [Descriptions](#description)  
 [Emphasis](#setupandinstallation) 
-[FoodPage](#food page)  
-[Drink Page](#drink page) 
+[FoodPage](#foodpage)  
+[Drink Page](#drinkpage) 
 [Support](#support)  
 [Troubleshooting](#troubleshooting) 
-
-
 <a name="description"/>
+
 ## Headers
 
 ## Yelp for Hippy
@@ -38,10 +37,10 @@ pip install react
 startreactproject
 ```
 
-## Food Page
+## FoodPage
 <img width="1231" alt="Screen Shot 2021-04-25 at 10 14 31 PM" src="https://user-images.githubusercontent.com/79564250/116020104-9f2c4480-a613-11eb-9bca-fed5aef3f40d.png">
 
-## Drink Page
+## DrinkPage
 <img width="1235" alt="Screen Shot 2021-04-25 at 10 15 46 PM" src="https://user-images.githubusercontent.com/79564250/116020193-cb47c580-a613-11eb-9049-a71a89adb899.png">
 
 
