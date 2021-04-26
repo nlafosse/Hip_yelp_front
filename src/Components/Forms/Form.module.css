@@ -1,0 +1,125 @@
+
+.title {
+    margin: 10px;
+    text-align: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+}
+
+.gridItem {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.label {
+    width: 30vw;
+    margin: 5px 0px;
+}
+
+.input {
+    width: 30vw;
+}
+
+.descriptionContainer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+    display: grid;
+    justify-content: center;
+}
+
+.description {
+    width: 60vw;
+    height: 12vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.tagContainer {
+    max-width: 800px;
+    display: flex;
+    width: 80wv;
+    flex-flow: row;
+    flex-wrap: wrap;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+    margin: 20px auto;
+    justify-content: center;
+}
+
+ul.tagList {
+    list-style: none;
+    margin: 5px 2px;
+    padding: 0;
+    font-size: 12px;
+    
+}
+
+
+.tagLabel {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.9);
+    border: 2px solid rgba(0,0,0,0.7);
+    color: black;
+    border-radius: 25px;
+    margin: 0px 0px;
+    transition: all .2s;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.tag {
+    display: none;
+}
+
+.tagLabel::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+.tag:checked + .tagLabel::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+.tag:checked + .tagLabel {
+    
+    background-color: black;
+    color: #fff;
+    transition: all .2s;
+}
+
+.submitBtn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 20vw;
+    padding: 2px 0;
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.submitBtn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

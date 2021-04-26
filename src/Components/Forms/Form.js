@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import {useHistory} from 'react-router-dom'
+import * as formStyles from './Form.module.css'
 
 
 const FoodForm = () => {
@@ -17,6 +18,7 @@ const FoodForm = () => {
     const [photoUrl, setPhotoUrl] = useState("")
     const [longitude, setLongitude] = useState("")
     const [latitude, setLatitude] = useState("")
+    const [tags, setTags] = useState([])
     const [newHotspot, setNewHotspot] = useState(null)
 
     // Declaring History to use for redirect after successful add
@@ -26,7 +28,8 @@ const FoodForm = () => {
     // The geocoder api uses the state abbreviations. So this is here to insert the correct state code for the state that is selected
     const stateAbr = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
     const groups = ["Italian", "French", "Cuban", "Carribbean", "Mexican", "Ethiopian", "Gastropub", "Chinese", "American", "Japanese", "Korean", "Middle Eastern", "Mediterranean", "Indian", "Thai", "Vietnamese"]
-
+    const listOfTags = ["food", "drink", "beer", "nightlife", "dine in", "pet friendly", "chinese", "asian", "latin", "lgbt-friendly", "casual", "high-end", "kid-friendly", "21+", "18+", "happy-hour", "vegan-friendly", "vegan-only", "gluten-free-friendly", "american", "mexican", "vietnamese", "japanese", "thai", "pizza", "korean", "bar", "fast-food"
+    ]
 
     const addData = async () => {
         try{
@@ -72,15 +75,30 @@ const FoodForm = () => {
     }
 
     const makeNewHotspot = () => {
-        setNewHotspot({
-            name: name,
-            group: group,
-            address: `${address} ${city} ${state} ${zip}`,
-            description: description,
-            photo_url: photoUrl,
-            lon: longitude.toString(),
-            lat: latitude.toString(),
-        })
+        let args = (category === 'foods' ? "foodTags" : "drinkTags")
+        if(category === "foods" ) {
+            setNewHotspot({
+                name: name,
+                group: group,
+                address: `${address} ${city} ${state} ${zip}`,
+                description: description,
+                photo_url: photoUrl,
+                lon: longitude.toString(),
+                lat: latitude.toString(),
+                foodTags: tags
+            })
+        } else if (category === "drinks") {
+            setNewHotspot({
+                name: name,
+                group: group,
+                address: `${address} ${city} ${state} ${zip}`,
+                description: description,
+                photo_url: photoUrl,
+                lon: longitude.toString(),
+                lat: latitude.toString(),
+                drinkTags: tags
+            })
+        }
     }
 
     
@@ -88,6 +106,16 @@ const FoodForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         getCoords()
+    }
+    // This updates the state for tags when a box is check or unchecked
+    const handleCheck = (event) => {
+        if(event.checked) {
+            tags.push({"tags": event.value})
+        } else {
+            let index = tags.indexOf(event.value)
+            tags.splice(index, 1)
+        }
+        console.log(tags)
     }
 
     useEffect(() => {
@@ -108,29 +136,67 @@ const FoodForm = () => {
     }, [latitude])
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <select name="category" id="category" onChange={(e) => setCategory(e.target.value)}>
-                    <option value="foods">Food</option>
-                    <option value="drinks">Drink</option>
-                </select>
-                <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)}></input>
-                <select name="group" id="group" onChange={(e) => setGroup(e.target.value)}>
-                    {groups.map((group, idx) => {
-                        return <option value={group}>{group}</option>
+        <div className={formStyles.formContainer}>
+            <h1 className={formStyles.title}>Add A Hotspot</h1>
+            <form onSubmit={handleSubmit} className={formStyles.form}>
+                <div className={formStyles.gridItem}>
+                    <label className={formStyles.label} htmlFor="category">Category</label>
+                    <select className={formStyles.input} name="category" id="category" onChange={(e) => setCategory(e.target.value)}>
+                        <option value="foods">Food</option>
+                        <option value="drinks">Drink</option>
+                    </select>
+                </div>
+                <div className={formStyles.gridItem}>
+                    <label className={formStyles.label} htmlFor="Name">Business Name</label>
+                    <input className={formStyles.input} type="text" name="Name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)}></input>
+                </div>
+                <div className={formStyles.gridItem}>
+                    <label className={formStyles.label} htmlFor="group">Group</label>
+                    <select className={formStyles.input} name="group" id="group" onChange={(e) => setGroup(e.target.value)}>
+                        {groups.map((group, idx) => {
+                            return <option value={group}>{group}</option>
+                        })}
+                    </select>
+                </div>
+                <div className={formStyles.gridItem}>
+                    <label className={formStyles.label} htmlfor="address">Address</label>
+                    <input className={formStyles.input} type="text" name="address" placeholder="Address" value={address} onChange={(e) => setAddress(e.target.value)}></input>
+                </div>
+                <div className={formStyles.gridItem}>
+                    <label className={formStyles.label} htmlfor="city">City</label>
+                    <input className={formStyles.input} type="text" name="city" placeholder="City" value={city} onChange={(e) => setCity(e.target.value)}></input>
+                </div>
+                <div className={formStyles.gridItem}>
+                    <label className={formStyles.label} htmlfor="states">State</label>
+                    <select className={formStyles.input} name="states" id="states" onChange={(e) => setState(e.target.value)}>
+                        {states.map((state, idx) => {
+                            return <option value={stateAbr[idx]}>{state}</option>
+                        })}
+                    </select>
+                </div>
+                <div className={formStyles.gridItem}>
+                    <label className={formStyles.label} htmlfor="zip">Zip Code</label>
+                    <input className={formStyles.input} type="zip" name="zip" placeholder="Zip Code" value={zip} onChange={(e) => setZip(e.target.value)}></input>
+                </div>
+                <div className={formStyles.gridItem}>
+                    <label className={formStyles.label} htmlfor="photo">Photo URL</label>
+                    <input className={formStyles.input} type="text" name="photo" placeholder="Photo Url" value={photoUrl} onChange={(e) => setPhotoUrl(e.target.value)}></input>
+                </div>
+                <div className={formStyles.descriptionContainer}>
+                    <label className={formStyles.label} htmlfor="description">Describe This Business!</label>
+                    <textarea className={formStyles.description} type="text" name="description" placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
+                </div>
+                <div className={formStyles.tagContainer}> 
+                    {listOfTags.map((tag, idx) => {
+                        return (
+                            <ul className={formStyles.tagList} >
+                                <input type="checkbox" id={tag} name={tag} className={formStyles.tag} value={tag} onChange={(e) => handleCheck(e.target)} />
+                                <label className={formStyles.tagLabel} htmlFor={tag}>{tag}</label>
+                            </ul>
+                        )
                     })}
-                </select>
-                <input type="text" placeholder="Address" value={address} onChange={(e) => setAddress(e.target.value)}></input>
-                <input type="text" placeholder="City" value={city} onChange={(e) => setCity(e.target.value)}></input>
-                <select name="states" id="states" onChange={(e) => setState(e.target.value)}>
-                    {states.map((state, idx) => {
-                        return <option value={stateAbr[idx]}>{state}</option>
-                    })}
-                </select>
-                <input type="zip" placeholder="Zip Code" value={zip} onChange={(e) => setZip(e.target.value)}></input>
-                <input type="text" placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)}></input>
-                <input type="text" placeholder="Photo Url" value={photoUrl} onChange={(e) => setPhotoUrl(e.target.value)}></input>
-                <input type="submit"></input>
+                </div>
+                <input className={formStyles.submitBtn} type="submit"></input>
             </form>
         </div>
     )
