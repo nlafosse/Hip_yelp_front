@@ -76,6 +76,7 @@ export default function App () {
           <Route exact path="/About" render={()=> <About />} />
           <Route exact path="/Team" render={()=> <Team />} />
           <Route exact path="/Story" render={()=> <Story />} />
+          <Route exact path="/Contact" render={()=> <Contact />} />
           <Route exact path="/Testimonials" render={()=> <Testimonials />} />
           <Route exact path="/Newsletter" render={()=> <Newsletter />} />
           <Route exact path="/Foods" render={()=> <Foods apiData={apiData} getApiData={getApiData}/> } />
