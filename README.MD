@@ -1,13 +1,18 @@
 ## Table of content
+
 [Header](#headers)  
+
 [Descriptions](#description)  
+
 [SetupandInstallation](#setupandinstallation) 
-<a
-[FoodPage](#foodpage) />  
+
+[FoodPage](#foodpage) 
+
 [Drink Page](#drinkpage) 
+
 [Support](#support)  
+
 [Troubleshooting](#troubleshooting) 
-<a name="description"/>
 
 ## Headers
 
