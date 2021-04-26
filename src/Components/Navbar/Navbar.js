@@ -12,6 +12,8 @@ const Navbar = ({ handleSubmit, handleChange, searchString, data}) => {
                 <Link className={navStyles.navItem} to="/" exact >Home</Link>
                 <Link className={navStyles.navItem} to="/Foods"> Food </Link>
                 <Link className={navStyles.navItem} to="/Drinks"> Drinks </Link>
+                <Link className={navStyles.navItem} to="/Map">Map</Link>
+                <Link className={navStyles.navItem} to="/Add">Add New</Link>
             </nav>
         </header>
     )
