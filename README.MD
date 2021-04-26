@@ -1,7 +1,7 @@
 ## Table of content
 [Header](#headers)  
 [Descriptions](#description)  
-[Emphasis](#setupandinstallation) 
+[SetupandInstallation](#setupandinstallation) 
 [FoodPage](#foodpage)  
 [Drink Page](#drinkpage) 
 [Support](#support)  
