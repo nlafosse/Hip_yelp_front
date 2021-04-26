@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch, useHistory} from 'react-router-dom'
+import { BrowserRouter as  Route, Switch, useHistory} from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Foods from './Components/Foods/Foods'
 import { useState} from 'react'
@@ -8,9 +8,9 @@ import FoodDetail from './Components/FoodDetail/FoodDetail'
 import Map from './Components/Map/Map';
 import Form from './Components/Forms/Form';
 import Drinks from './Components/Drinks/Drinks'
-import DrinkDetail from './Components/DrinkDetail/DrinkDetail'
-import ResultsPage from './Components/ResultsPage/ResultsPage'
+import DrinkDetail from './Components/DrinkDetail/DrinkDetail';
 import SuccessfulAdd from './Components/SuccessfulAdd/SuccessfulAdd';
+import Footer from './Components/Footer/Footer' 
 // Save the Component, key and path in an array of objects for each Route
 // You could write all routes by hand but I'm lazy annd this lets me use
 // the map method to just loop over them and make my routes
@@ -58,29 +58,11 @@ export default function App () {
       console.log(err);
     }
   }
-  // We dont need to pull the data on page load
-  // useEffect(() => {
-  //   getApiData();
-  // }, []);
-  function handleChange(event) {
-    setSearchString(event.target.value);
-  }
-  
-  function handleSubmit(event) {
-    
-    event.preventDefault();
-    setApiData(searchString);
-    history.push('/results');
-  }
+
+
   return (
     <div>
-      <Navbar
-      handleChange={handleChange}
-      handleSubmit={handleSubmit}
-      searchString={searchString}
-      data={apiData}
-      
-      ></Navbar>
+      <Navbar></Navbar>
       <Switch>
         <Route exact path="/" render={()=> <Home />} />
         <Route exact path="/Foods" render={()=> <Foods apiData={apiData} getApiData={getApiData}/> } />
@@ -88,8 +70,6 @@ export default function App () {
           path="/Foods/:id"
           render={(routerProps) => <FoodDetail hotspot={apiData} routerProps={routerProps}/>}
         />
-
- 
         <Route exact path="/map" render={() => <Map apiData={apiData} getApiData={getApiData} currentCategory={currentCategory}/>} />
         <Route exact path="/Add" render={() => <Form />} />
  
@@ -98,9 +78,9 @@ export default function App () {
           path="/Drinks/:id"
           render={(routerProps) => <DrinkDetail hotspot={apiData} routerProps={routerProps}/>}
         />
-        <Route exact path="/results" render={() => <ResultsPage lastSearch={lastSearch} apiData={apiData} />} />
         <Route exact path="/Success" render={() => <SuccessfulAdd />} />
       </Switch>
+     
     </div>
   )
 }
