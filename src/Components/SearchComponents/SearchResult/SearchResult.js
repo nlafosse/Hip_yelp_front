@@ -1,21 +1,26 @@
-const SearchResults = ({ results }) => {
+import Cards from "../../Cards/Cards"
+import {useEffect} from "react"
+
+const SearchResults = ({ apiData }) => {
     // return early if there are no results
-    import Cards from "../Cards/Cards"
-    if (results === null) {        
+
+  console.log(apiData)
+
+    if (apiData === null) {        
         return <h2>No results Found!</h2>
       }
     
       
     return (
-      <div className="results">
+      <div>
           
-        {results.map(image => (
-            <div onClick={() => card(image)} key={i}>
+       
+            <div>
                 <Cards placeData={apiData} group={"Foods"}/>
                 
                
             </div>
-        ))}
+        )
       </div>
     )
   }
