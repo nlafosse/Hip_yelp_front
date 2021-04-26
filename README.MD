@@ -1,25 +1,15 @@
 ## Table of content
 
 [Header](#headers)  
-
 [Descriptions](#description)  
-
 [SetupandInstallation](#setupandinstallation) 
-
 [Food Page](#foodpage) 
-
 [Drink Page](#drinkpage) 
-
 [Support](#support)  
-
 [Troubleshooting](#troubleshooting) 
-
 [Future Goal](#futuregoal) 
-
 [Contrubutions](#contribution) 
-
 [Authors](#authors)
-
 [Status](#status) 
 
 
