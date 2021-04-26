@@ -42,7 +42,7 @@ return (
 		<Row>
 		<Column>
 			<Heading>About Us</Heading>
-			<FooterLink href="/Storyç">Our Story</FooterLink>
+			<FooterLink href="/Story">Our Story</FooterLink>
 			<FooterLink href="/Team">Our Team</FooterLink>
 			<FooterLink href="/Testimonials">Testimonials</FooterLink>
 		</Column>
@@ -54,8 +54,8 @@ return (
 		</Column>
 		<Column>
 			<Heading>Contact Us</Heading>
-			<FooterLink href="#">East Coast</FooterLink>
-			<FooterLink href="#">West Coast</FooterLink>
+			<FooterLink href="/Contact">East Coast</FooterLink>
+			<FooterLink href="/Contact">West Coast</FooterLink>
 			<FooterLink href="/Newsletter">Newsletter</FooterLink>
 		</Column>
 		<Column>
@@ -90,6 +90,7 @@ return (
 			</FooterLink> */}
 		</Column>
 		</Row>
+		All right reserve copyright 2021@ Terms and Conditions                                Powered by VSCode
 	</Container>
 	</Box>
 );

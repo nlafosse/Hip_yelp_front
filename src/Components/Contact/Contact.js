@@ -93,12 +93,14 @@ class ContactForm extends React.Component {
       <form action="/" onSubmit={(e) => this.handleSubmit(e)} encType="multipart/form-data" autoComplete="off">
         <div className="form-group">
           <label className="mb-0">Name<span className="text-danger">*</span></label>
-          <input name="name" type="text" className="form-control" placeholder="enter your full name" value={this.state.name} onChange={this.handleChange} onBlur={this.handleBlur} />
+          <br />
+          <input name="name" type="name" className="form-control" placeholder="enter your full name" value={this.state.name} onChange={this.handleChange} onBlur={this.handleBlur} />
           { nameError
             ? <div className="alert alert-danger mt-2">Name is a required.</div>
             : ''
           }
         </div>
+        <br />
         <div className="form-group">
           <label className="mb-0">Email<span className="text-danger">*</span></label>
           <br />
@@ -112,10 +114,13 @@ class ContactForm extends React.Component {
             : ''
           }
         </div>
+        <br />
         <div className="form-group">
           <label className="mb-0">Phone Number (required)</label>
-          <input name="contact" type="text" className="form-control" placeholder="your cell phone number" onChange={this.handleChange} value={this.state.contact}  />
+          <br />
+          <input name="contact" type="phone" className="form-control" placeholder="your cell phone number" value={this.state.phone} onChange={this.handleChange} value={this.state.contact}  />
         </div>
+        <br />
         <div className="form-group">
           <label className="mb-0">Message<span className="text-danger">*</span></label>
           <br />
