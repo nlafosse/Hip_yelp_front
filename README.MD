@@ -6,13 +6,22 @@
 
 [SetupandInstallation](#setupandinstallation) 
 
-[FoodPage](#foodpage) 
+[Food Page](#foodpage) 
 
 [Drink Page](#drinkpage) 
 
 [Support](#support)  
 
 [Troubleshooting](#troubleshooting) 
+
+[Future Goal](#futuregoal) 
+
+[Contrubutions](#contribution) 
+
+[Authors](#authors)
+
+[Status](#status) 
+
 
 ## Headers
 
@@ -71,14 +80,14 @@ local all postgres md5
 Restart PostgreSQL: sudo service postgresql restart
 Now rerun the original command
 
-## Future goal
+## Futuregoal
 
 
 
-## Contributing
+## Contribution
 Pull requests are welcome.
 
-## Authors and acknowledgment
+## Authors
 Tyree 
 Tyler
 Hengyu
