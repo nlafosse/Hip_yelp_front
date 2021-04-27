@@ -48,7 +48,8 @@ This part is only frontend where react is moatly used. setted up mostly OSX and 
 
 ```bash
 pip install python3
-``` ```bash
+``` 
+```bash
 pip install django
 ```
 ```bash
