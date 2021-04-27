@@ -64,13 +64,18 @@ startreactproject
 ## Frameworks
 
 React-Map-gl https://visgl.github.io/react-map-gl/
+
 React-Map-gl-geocoder https://www.npmjs.com/package/react-map-gl-geocoder
+
 navStyle-CSS Modules https://programmingwithmosh.com/react/css-modules-react/ 
+
 React-Modal https://www.npmjs.com/package/react-modal
+
 
 ## API
 
-Mapbox - https://www.mapbox.com
+Mapbox - https://www.mapbox.com/
+
 https://hotspot1.herokuapp.com/
 
 
@@ -89,8 +94,7 @@ Copy the path it returns (something like /etc/postgresql/13/main/pg_hba.conf on 
 Open pg_hba.conf in a text editor (you will likely need to run the command with sudo)
 Change this line:
 local all postgres peer
-to:
-local all postgres md5
+to:local all postgres md5
 Restart PostgreSQL: sudo service postgresql restart
 Now rerun the original command
 
@@ -99,18 +103,18 @@ Now rerun the original command
 
 
 ## Contribution
-Pull requests are welcome.
+Pull requests are welcome. Any feedback, comments and suggestions is welcome. Please use contact us page from the site!
 
 ## Authors
-Tyree 
-Tyler
-Hengyu
-Krishna
 
-Please make sure to update tests as appropriate.
+Tyree (https://github.com/buggydev1)
+Tyler (https://github.com/tjconti12)
+Hengyu (https://github.com/hengyuni)
+Krishna (https://github.com/krishnaneupaney)
+
+## Status
+MVP Published!
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-## Status
-Building..Site should be up soon.
