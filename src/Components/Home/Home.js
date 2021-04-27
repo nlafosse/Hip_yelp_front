@@ -1,11 +1,11 @@
 import {Link} from 'react-router-dom'
-import placeholder from '../../Images/placeholder.png'
+
 import * as homeStyles from './Home.module.css'
 
 const Home = () => {
     return (
         <div className={homeStyles.body}>
-            <h1 className={homeStyles.title}>Hipstr</h1>
+            <h1 className={homeStyles.title}>Travlr</h1>
             <div className={homeStyles.container}>
                 <div>
                     <Link className={homeStyles.link} to="/Foods">
