@@ -33,7 +33,7 @@ This is site for people who want to explore local foods and drinks. Users can cl
 This page was inspired by popular search sites such as yelp, foursquare, ect. This particular application employs the use of a tag system and user created data to display trending food and drink places in the New York Area.
 
 ## HomePage
-<img width="1000" alt="Screen Shot 2021-04-27 at 12 36 56 AM" src="https://user-images.githubusercontent.com/79564250/116185973-af662180-a6f0-11eb-93e1-0422e854397b.png">
+<img width="1000" alt="Screen Shot 2021-04-27 at 12 36 56 AM" src="./src/Images/HomePageScreenShot.png">
 
 
 
