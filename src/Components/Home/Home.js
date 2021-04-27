@@ -9,7 +9,7 @@ const Home = () => {
             <div className={homeStyles.container}>
                 <div>
                     <Link className={homeStyles.link} to="/Foods">
-                        <h2>Food</h2>
+                        <h2 className={homeStyles.group}>Food</h2>
                         <div className={homeStyles.imgContainer}>
                             <img className={homeStyles.homeImg} src={"https://assets3.thrillist.com/v1/image/1880039/2880x3000/scale;jpeg_quality=60;progressive.jpg"} alt="example food option" />
                         </div>
@@ -17,7 +17,7 @@ const Home = () => {
                 </div>
                 <div>
                     <Link className={homeStyles.link} to="/Drinks">
-                        <h2>Drinks</h2>
+                        <h2 className={homeStyles.group}>Drinks </h2>
                         <div className={homeStyles.imgContainer}>
                             <img className={homeStyles.homeImg} src={"https://noseychef.com/wp-content/uploads/2018/12/IMG_4280123.jpg"} alt="example drink option" />
                         </div>
