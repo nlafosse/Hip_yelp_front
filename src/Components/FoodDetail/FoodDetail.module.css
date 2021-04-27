@@ -112,6 +112,7 @@
   .basicInfo {
     width: 270px;
     padding: 10px;
+    padding-bottom: 30px;
     /* margin-right: 25px; */
     margin: 5px 25px 30px 30px;
     /* border: 1px solid black; */
