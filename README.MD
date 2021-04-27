@@ -1,9 +1,10 @@
 ## Table of content
 
-[Hipster](#headers)
+[Travlr](#headers)
 <br />
 [Add More](#add)
-[SetupandInstallation](#setupandinstallation) 
+<br />
+[Setup and Installation](#setupandinstallation) 
 <br />
 [Food Page](#foodpage) 
 <br />
@@ -18,15 +19,18 @@
 <br />
 [Contrubutions](#contribution) 
 <br />
-[Authors](#authors)[Status](#status) 
+[Authors](#authors)
+<br />
+[Status](#status) 
 
 
-## Hipster
+## Travlr
 
-This is site for people who wants to explore local foods and drinks. User can click on individual tabs of food and drink to explore what they like to checkout. Then user can click on map to see all the locations in one click. 
+This is site for people who want to explore local foods and drinks. Users can click on individual tabs of food and drink to explore what they like to checkout. Then users can click on map to see all the locations in one click. 
 
 ## Why?
-We created this page because if we want to go out for a food or drink, one have to individually search, which can be frustating experience. With this page, user can find lists of resturants and bar near them all in single website.  
+
+This page was inspired by popular search sites such as yelp, foursquare, ect. This particular application employs the use of a tag system and user created data to display trending food and drink places in the New York Area.
 
 ## HomePage
 <img width="1000" alt="Screen Shot 2021-04-27 at 12 36 56 AM" src="https://user-images.githubusercontent.com/79564250/116185973-af662180-a6f0-11eb-93e1-0422e854397b.png">
@@ -46,21 +50,14 @@ We created this page because if we want to go out for a food or drink, one have 
 ## Add
 Using this site, hippies can find food, bar and night life near them. If user have visited other local resturant or bar, they can simply click on add button and list on this website. 
 
+The add pages allows a user to submit a new place to the database. When an address is inputted into the form, it is first sent to a geocoding api that will return the longitude and latitude of the place. This info, as well as the address, and the selected tags are submitted to the database.
+
 <img width="1212" alt="Screen Shot 2021-04-27 at 12 40 43 AM" src="https://user-images.githubusercontent.com/79564250/116186231-36b39500-a6f1-11eb-9817-b2e238ff438e.png">
 
-## SetupandInstallation
+## Setup and Installation
 
-This part is only frontend where react is moatly used. setted up mostly OSX and Linux
+Installation for react on the front end.
 
-```bash
-pip install python3
-``` 
-```bash
-pip install django
-```
-```bash
-pip install psycopg2-binary
-```
 ```bash 
 pip install react 
 ```
@@ -82,6 +79,8 @@ React-Modal https://www.npmjs.com/package/react-modal
 ## API
 
 Mapbox - https://www.mapbox.com/
+
+Geocoder - https://www.geocod.io/
 
 https://hotspot1.herokuapp.com/
 
@@ -106,7 +105,7 @@ to:local all postgres md5
 Restart PostgreSQL: sudo service postgresql restart
 Now rerun the original command
 
-## Futuregoal
+## Future goal
 In future, we plan on adding more locations and other categories such as night clubs, parties and live music! 
 
 ## Contribution
