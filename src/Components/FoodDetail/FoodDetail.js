@@ -25,6 +25,13 @@ export default function FoodDetail ({routerProps, hotspot}) {
             <p>{selected[0].group}</p>
             <p>{selected[0].description}</p>
             <p>{selected[0].address}</p>
+            <h4 className={foodDetailStyle.tagHeadline}>Tags:</h4>
+            {selected[0].tags !== null ? (
+            selected[0].tags.map((tag) =>{
+              return <p className={foodDetailStyle.tags}>{tag}</p>
+                    
+            })) : (<p></p>)
+          }
           </div>
         </div>
       <div className={foodDetailStyle.home}>
