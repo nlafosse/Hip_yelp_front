@@ -108,10 +108,10 @@ Pull requests are welcome. Any feedback, comments and suggestions is welcome. Pl
 
 ## Authors
 
-Tyree (https://github.com/buggydev1)
-Tyler (https://github.com/tjconti12)
-Hengyu (https://github.com/hengyuni)
-Krishna (https://github.com/krishnaneupaney)
+Tyree (https://github.com/buggydev1)/
+Tyler (https://github.com/tjconti12)/
+Hengyu (https://github.com/hengyuni)/
+Krishna (https://github.com/krishnaneupaney)/
 
 ## Status
 MVP Published!
