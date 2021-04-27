@@ -20,27 +20,14 @@ import AboutUs from './Components/AboutUs/AboutUS'
 
 
 
-const routes = [
-  {
-    Component: Home,
-    key: 'Home',
-    path: '/',
-    
-    Component: Foods,
-    key: 'Foods',
-    path: '/Foods'
-  }
-]
+
 
 export default function App () {
   const [apiData, setApiData] = useState([]);
   // I added this to keep track of whether the current search was food or drinks. This needed to be passed to the map for the location popups to link properly
   const [currentCategory, setCurrentCategory] = useState("")
 
-  const apiEndpoint = {
-    endpointfoods: "foods",
-    endpointdrinkS: "drinks"
-  };
+
 
   const getApiData = async (param) => { 
     setCurrentCategory(param)
@@ -48,7 +35,7 @@ export default function App () {
       const res = await fetch(`https://hotspot1.herokuapp.com/${param}/`);
       const data = await res.json();
       setApiData(data)
-      console.log("work", res, apiData)
+    
     } catch (err) {
       console.log(err);
     }
@@ -80,6 +67,7 @@ export default function App () {
         />
         <Route exact path="/Success" render={() => <SuccessfulAdd />} />
         <Route exact path='/about' render={() => <AboutUs />} />
+        
       </Switch>
       <Footer></Footer>
     </Router>

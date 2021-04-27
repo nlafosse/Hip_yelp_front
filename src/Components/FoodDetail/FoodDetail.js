@@ -4,13 +4,11 @@ import * as foodDetailStyle from './FoodDetail.module.css'
 
 
 export default function FoodDetail ({routerProps, hotspot}) {
-  console.log(routerProps)
+
 
   const selected = [...hotspot].filter(
     (h) => h.id == routerProps.match.params.id
   );
-
-  console.log(selected)
 
   if (selected[0] === undefined) {
     return (
