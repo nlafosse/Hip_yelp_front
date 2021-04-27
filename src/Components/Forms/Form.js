@@ -162,7 +162,7 @@ const FoodForm = () => {
                     <input className={formStyles.input} type="text" name="photo" placeholder="Photo Url" value={photoUrl} onChange={(e) => setPhotoUrl(e.target.value)}></input>
                 </div>
                 <div className={formStyles.descriptionContainer}>
-                    <label className={formStyles.label} htmlfor="description">Describe This Business!</label>
+                    <label className={`${formStyles.label} ${formStyles.descriptionLabel}`} htmlfor="description">Describe This Business!</label>
                     <textarea className={formStyles.description} type="text" name="description" placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
                 </div>
                 <div className={formStyles.tagContainer}> 
