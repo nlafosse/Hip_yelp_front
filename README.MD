@@ -1,12 +1,16 @@
 ## Table of content
 
-[Hipster](#headers)  
+[Hipster](#headers)
+<br />
 [Add More](#add)  
 [SetupandInstallation](#setupandinstallation) 
 [Food Page](#foodpage) 
 [Drink Page](#drinkpage) 
-[Frameworks](#Frameworks) [Support](#support)  
-[Troubleshooting](#troubleshooting) [Future Goal](#futuregoal) [Contrubutions](#contribution) 
+[Frameworks](#Frameworks) 
+[Support](#support)  
+[Troubleshooting](#troubleshooting) 
+[Future Goal](#futuregoal) 
+[Contrubutions](#contribution) 
 [Authors](#authors)[Status](#status) 
 
 
