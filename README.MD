@@ -33,10 +33,12 @@ This is site for people who wants to explore local foods and drinks. User can cl
 We created this page because if we want to go out for a food or drink, one have to individually search, which can be frustating experience. With this page, user can find lists of resturants and bar near them all in single website.  
 
 ## FoodPage
-<img width="1231" alt="Screen Shot 2021-04-25 at 10 14 31 PM" src="https://user-images.githubusercontent.com/79564250/116020104-9f2c4480-a613-11eb-9bca-fed5aef3f40d.png">
+<img width="1167" alt="Screen Shot 2021-04-27 at 12 14 10 AM" src="https://user-images.githubusercontent.com/79564250/116184302-8001e580-a6ed-11eb-899d-d5298e8891a1.png">
+
 
 ## DrinkPage
-<img width="1235" alt="Screen Shot 2021-04-25 at 10 15 46 PM" src="https://user-images.githubusercontent.com/79564250/116020193-cb47c580-a613-11eb-9049-a71a89adb899.png">
+<img width="1169" alt="Screen Shot 2021-04-27 at 12 14 38 AM" src="https://user-images.githubusercontent.com/79564250/116184343-8f812e80-a6ed-11eb-94fb-7fafcde0370c.png">
+
 
 ## Add button
 Using this site, hippies can find food, bar and night life near them. If user have visited other local resturant or bar, they can simply click on add button and list on this website. 
