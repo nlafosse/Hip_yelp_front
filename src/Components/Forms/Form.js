@@ -28,7 +28,7 @@ const FoodForm = () => {
     // The geocoder api uses the state abbreviations. So this is here to insert the correct state code for the state that is selected
     const stateAbr = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
     const groups = ["Italian", "French", "Cuban", "Carribbean", "Mexican", "Ethiopian", "Gastropub", "Chinese", "American", "Japanese", "Korean", "Middle Eastern", "Mediterranean", "Indian", "Thai", "Vietnamese"]
-    const listOfTags = ["food", "drink", "beer", "nightlife", "dine in", "pet friendly", "chinese", "asian", "latin", "lgbt-friendly", "casual", "high-end", "kid-friendly", "21+", "18+", "happy-hour", "vegan-friendly", "vegan-only", "gluten-free-friendly", "american", "mexican", "vietnamese", "japanese", "thai", "pizza", "korean", "bar", "fast-food"
+    const listOfTags = ["food", "drink", "beer", "nightlife", "dine in", "pet friendly", "chinese", "asian", "latin", "lgbt-friendly", "casual", "high-end", "kid-friendly", "21+", "18+", "happy-hour", "vegan-friendly", "vegan-only", "gluten-free-friendly", "american", "mexican", "vietnamese", "japanese", "thai", "pizza", "korean", "bar", "fast-food", "date spot"
     ]
 
     const addData = async () => {
