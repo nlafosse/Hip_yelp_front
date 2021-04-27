@@ -2,13 +2,15 @@
 
 [Header](#headers)  
 
-[Descriptions](#description)  
+[Add More](#add)  
 
 [SetupandInstallation](#setupandinstallation) 
 
 [Food Page](#foodpage) 
 
 [Drink Page](#drinkpage) 
+
+[Frameworks] (#Frameworks)
 
 [Support](#support)  
 
@@ -25,21 +27,28 @@
 
 ## Headers
 
-## Yelp for Hippy
+This is site for people who wants to explore local foods and drinks. User can click on individual tabs of food and drink to explore what they like to checkout. Then user can click on map to see all the locations in one click. 
 
-This is site for hippy.
+## Why?
+We created this page because if we want to go out for a food or drink, one have to individually search, which can be frustating experience. With this page, user can find lists of resturants and bar near them all in single website.  
 
-## Description
-Using this site, hippies can find food, bar and night life near them. Then after their visit, rate them accordingly. 
+## FoodPage
+<img width="1231" alt="Screen Shot 2021-04-25 at 10 14 31 PM" src="https://user-images.githubusercontent.com/79564250/116020104-9f2c4480-a613-11eb-9bca-fed5aef3f40d.png">
+
+## DrinkPage
+<img width="1235" alt="Screen Shot 2021-04-25 at 10 15 46 PM" src="https://user-images.githubusercontent.com/79564250/116020193-cb47c580-a613-11eb-9049-a71a89adb899.png">
+
+## Add button
+Using this site, hippies can find food, bar and night life near them. If user have visited other local resturant or bar, they can simply click on add button and list on this website. 
+<img width="1155" alt="Screen Shot 2021-04-26 at 9 53 02 PM" src="https://user-images.githubusercontent.com/79564250/116173023-cc432a80-a6d9-11eb-834f-17df81639c5b.png">
 
 ## SetupandInstallation
 
-This part is only frontend where react is used. setted up mostly OSX and Linux
+This part is only frontend where react is moatly used. setted up mostly OSX and Linux
 
 ```bash
 pip install python3
-```
-```bash
+``` ```bash
 pip install django
 ```
 ```bash
@@ -52,12 +61,17 @@ pip install react
 startreactproject
 ```
 
-## FoodPage
-<img width="1231" alt="Screen Shot 2021-04-25 at 10 14 31 PM" src="https://user-images.githubusercontent.com/79564250/116020104-9f2c4480-a613-11eb-9bca-fed5aef3f40d.png">
+## Frameworks
 
-## DrinkPage
-<img width="1235" alt="Screen Shot 2021-04-25 at 10 15 46 PM" src="https://user-images.githubusercontent.com/79564250/116020193-cb47c580-a613-11eb-9049-a71a89adb899.png">
+React-Map-gl https://visgl.github.io/react-map-gl/
+React-Map-gl-geocoder https://www.npmjs.com/package/react-map-gl-geocoder
+navStyle-CSS Modules https://programmingwithmosh.com/react/css-modules-react/ 
+React-Modal https://www.npmjs.com/package/react-modal
 
+## API
+
+Mapbox - https://www.mapbox.com
+https://hotspot1.herokuapp.com/
 
 
 ## Support
