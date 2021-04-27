@@ -123,3 +123,25 @@ ul.tagList {
     color: white;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 700px) {
+    .form {
+        grid-template-columns: 1fr;
+        border: 2px solid black;
+    }
+
+    .gridItem {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .descriptionContainer {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border: 2px solid red;
+    }
+
+    .descriptionLabel {
+        width: 100%;
+    }
+}
