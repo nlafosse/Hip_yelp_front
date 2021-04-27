@@ -1,0 +1,17 @@
+.successContainer {
+    text-align: center;
+    line-height: 30px;
+}
+
+.homeBtn {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.homeBtn:hover {
+    margin-top: 1.5px;
+}
