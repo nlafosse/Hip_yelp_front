@@ -1,9 +1,11 @@
 ## Table of content
 
-[Header](#headers)  
+[Hipster](#headers)  
 [Add More](#add)  
 [SetupandInstallation](#setupandinstallation) 
+
 [Food Page](#foodpage) 
+
 [Drink Page](#drinkpage) 
 [Frameworks](#Frameworks)
 [Support](#support)  
