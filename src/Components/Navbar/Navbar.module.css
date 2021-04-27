@@ -1,15 +1,19 @@
 .navbarHeader {
-    background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(6,4,0,1) 100%);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: #293A57;
+    height: 50px;
 }
 
 .navbarNav {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .navItem {
     color: white;
-    margin: 10px 15px;
+    margin: 15px 15px;
     padding: 2px 5px;
     text-align: center;
     text-transform: uppercase;
@@ -18,5 +22,6 @@
 
 .navItem:hover {
     background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
     
 }
