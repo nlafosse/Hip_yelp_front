@@ -44,10 +44,10 @@ const FoodForm = () => {
             );
             console.log(res)
             // Having issues catching error so I added some logic to ensure that the page does not change if there is a server error
-            if(res.status != 201) {
+            if(res.status !== 201) {
                 return console.log("Sorry, error. Code:", res.status)
             }
-            const data = await res.json();
+            
             history.push('/Success');
 
         } catch (err) {
