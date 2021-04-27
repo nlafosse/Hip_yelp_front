@@ -9,11 +9,17 @@
 [Food Page](#foodpage) 
 <br />
 [Drink Page](#drinkpage) 
+<br />
 [Frameworks](#Frameworks) 
+<br />
 [Support](#support)  
+<br />
 [Troubleshooting](#troubleshooting) 
+<br />
 [Future Goal](#futuregoal) 
+<br />
 [Contrubutions](#contribution) 
+<br />
 [Authors](#authors)[Status](#status) 
 
 
