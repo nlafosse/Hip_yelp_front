@@ -87,8 +87,9 @@ please visit https://docs.djangoproject.com/en/3.2/
 Error: psql: FATAL: role “postgres” does not exist 
 Solution: Check out this https://stackoverflow.com/questions/15301826/psql-fatal-role-postgres-does-not-exist.
 
-Error: psql: error: FATAL: Peer authentication failed for user "postgres" Solution:
+Error: psql: error: FATAL: Peer authentication failed for user "postgres" 
 
+Solution:
 Run psql
 Run SHOW hba_file;
 Copy the path it returns (something like /etc/postgresql/13/main/pg_hba.conf on Ubuntu)
@@ -100,14 +101,12 @@ Restart PostgreSQL: sudo service postgresql restart
 Now rerun the original command
 
 ## Futuregoal
-
-
+In future, we plan on adding more locations and other categories such as night clubs, parties and live music! 
 
 ## Contribution
 Pull requests are welcome. Any feedback, comments and suggestions is welcome. Please use contact us page from the site!
 
 ## Authors
-
 Tyree (https://github.com/buggydev1)/
 Tyler (https://github.com/tjconti12)/
 Hengyu (https://github.com/hengyuni)/
