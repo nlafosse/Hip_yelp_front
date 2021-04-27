@@ -26,6 +26,7 @@ export default function DrinkDetail ({routerProps, hotspot}) {
             <p>{selected[0].group}</p>
             <p>{selected[0].description}</p>
             <p>{selected[0].address}</p>
+            <h4 className={drinkDetailStyle.tagHeadline}>Tags:</h4>
             {selected[0].tags !== null ? (
             selected[0].tags.map((tag) =>{
               return <p className={drinkDetailStyle.tags}>{tag}</p>
