@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+## Table of content
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Hipster](#headers)
+<br />
+[Add More](#add)
+[SetupandInstallation](#setupandinstallation) 
+<br />
+[Food Page](#foodpage) 
+<br />
+[Drink Page](#drinkpage) 
+<br />
+[Frameworks](#Frameworks) 
+<br />
+[Support](#support)  
+[Troubleshooting](#troubleshooting) 
+<br />
+[Future Goal](#futuregoal) 
+<br />
+[Contrubutions](#contribution) 
+<br />
+[Authors](#authors)[Status](#status) 
 
-## Available Scripts
 
-In the project directory, you can run:
+## Hipster
 
-### `yarn start`
+This is site for people who wants to explore local foods and drinks. User can click on individual tabs of food and drink to explore what they like to checkout. Then user can click on map to see all the locations in one click. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Why?
+We created this page because if we want to go out for a food or drink, one have to individually search, which can be frustating experience. With this page, user can find lists of resturants and bar near them all in single website.  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## HomePage
+<img width="1000" alt="Screen Shot 2021-04-27 at 12 36 56 AM" src="https://user-images.githubusercontent.com/79564250/116185973-af662180-a6f0-11eb-93e1-0422e854397b.png">
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## FoodPage
+<img width="1219" alt="Screen Shot 2021-04-27 at 12 39 51 AM" src="https://user-images.githubusercontent.com/79564250/116186171-1683d600-a6f1-11eb-879d-b58223af6526.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## DrinkPage
+<img width="1156" alt="Screen Shot 2021-04-27 at 12 40 13 AM" src="https://user-images.githubusercontent.com/79564250/116186202-23a0c500-a6f1-11eb-894d-74abac3fde2e.png">
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Add
+Using this site, hippies can find food, bar and night life near them. If user have visited other local resturant or bar, they can simply click on add button and list on this website. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img width="1212" alt="Screen Shot 2021-04-27 at 12 40 43 AM" src="https://user-images.githubusercontent.com/79564250/116186231-36b39500-a6f1-11eb-9817-b2e238ff438e.png">
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## SetupandInstallation
 
-## Learn More
+This part is only frontend where react is moatly used. setted up mostly OSX and Linux
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+pip install python3
+``` 
+```bash
+pip install django
+```
+```bash
+pip install psycopg2-binary
+```
+```bash 
+pip install react 
+```
+```bash
+startreactproject
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Frameworks
 
-### Code Splitting
+React-Map-gl https://visgl.github.io/react-map-gl/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React-Map-gl-geocoder https://www.npmjs.com/package/react-map-gl-geocoder
 
-### Analyzing the Bundle Size
+navStyle-CSS Modules https://programmingwithmosh.com/react/css-modules-react/ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+React-Modal https://www.npmjs.com/package/react-modal
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## API
 
-### Advanced Configuration
+Mapbox - https://www.mapbox.com/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+https://hotspot1.herokuapp.com/
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Support
+please visit https://docs.djangoproject.com/en/3.2/
 
-### `yarn build` fails to minify
+## Troubleshooting
+Error: psql: FATAL: role “postgres” does not exist 
+Solution: Check out this https://stackoverflow.com/questions/15301826/psql-fatal-role-postgres-does-not-exist.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Error: psql: error: FATAL: Peer authentication failed for user "postgres" 
+
+Solution:
+Run psql
+Run SHOW hba_file;
+Copy the path it returns (something like /etc/postgresql/13/main/pg_hba.conf on Ubuntu)
+Open pg_hba.conf in a text editor (you will likely need to run the command with sudo)
+Change this line:
+local all postgres peer
+to:local all postgres md5
+Restart PostgreSQL: sudo service postgresql restart
+Now rerun the original command
+
+## Futuregoal
+In future, we plan on adding more locations and other categories such as night clubs, parties and live music! 
+
+## Contribution
+Pull requests are welcome. Any feedback, comments and suggestions is welcome. Please use contact us page from the site!
+
+## Authors
+Tyree (https://github.com/buggydev1)/
+Tyler (https://github.com/tjconti12)/
+Hengyu (https://github.com/hengyuni)/
+Krishna (https://github.com/krishnaneupaney)/
+
+## Status
+MVP Published!
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
