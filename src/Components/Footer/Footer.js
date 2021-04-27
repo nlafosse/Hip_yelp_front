@@ -1,26 +1,3 @@
-// import React from 'react';
-// import "./Footer.css";
-
-// const Footer = () => {
-//     return(
-//         <div className="col">
-//             <h4>YELP</h4>
-//             <ul>
-//                 <li><a href="/Foods">About Us</a></li>
-//                 <br />
-//             <div className="col">
-//                 <h4>Address</h4>
-//                 <li><a href="/Foods">Coupons</a></li>
-//                 <br />
-//             </div>
-//                 <li><a href="/Drinks">Contact Us</a></li>
-//             </ul>
-//         </div>
-//     )
-// }
-
-// export  default Footer
-
 import React from "react";
 import {
 Box,
@@ -60,21 +37,21 @@ return (
 		</Column>
 		<Column>
 			<Heading>Social Media</Heading>
-			<FooterLink href="#">
+			<FooterLink target="_blank" href="https://www.facebook.com">
 			<i className="fab fa-facebook-f">
 				<span style={{ marginLeft: "10px" }}>
 				Facebook
 				</span>
 			</i>
 			</FooterLink>
-			<FooterLink href="#">
+			<FooterLink target="_blank" href="https://www.instagram.com">
 			<i className="fab fa-instagram">
 				<span style={{ marginLeft: "10px" }}>
 				Instagram
 				</span>
 			</i>
 			</FooterLink>
-			<FooterLink href="#">
+			<FooterLink target="_blank" href="https://www.twitter.com">
 			<i className="fab fa-twitter">
 				<span style={{ marginLeft: "10px" }}>
 				Twitter
@@ -90,8 +67,8 @@ return (
 			</FooterLink> */}
 		</Column>
 		</Row>
-		All right reserve copyright 2021@ Terms and Conditions                                Powered by VSCode
-	</Container>
+		@All right reserve Copyright 2021 Terms and Conditions Apply              
+		</Container>
 	</Box>
 );
 };
