@@ -1,5 +1,5 @@
 import ReactMapGl from 'react-map-gl';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import Markers from './Markers';
 import LocationPopup from './LocationPopup';
 

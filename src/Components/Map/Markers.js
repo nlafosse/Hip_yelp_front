@@ -1,16 +1,9 @@
 import {Marker} from 'react-map-gl';
-import {useEffect, useState} from 'react';
 import * as markerStyles from './Marker.module.css';
 import markerImg from '../../Images/markerImg.png';
 
-const Markers = ({ apiData, getApiData, setSelected }) => {
-    console.log('markers', apiData)
-    
-    const [test, setTest] = useState('')
+const Markers = ({ apiData, setSelected }) => {
 
-    useEffect(() => {
-        console.log('update!')
-    }, apiData)
 
     if(apiData.length < 1) {
         return <h1>Loading</h1>
