@@ -3,17 +3,11 @@
 [Hipster](#headers)  
 [Add More](#add)  
 [SetupandInstallation](#setupandinstallation) 
-
 [Food Page](#foodpage) 
-
 [Drink Page](#drinkpage) 
-[Frameworks](#Frameworks)
-[Support](#support)  
-[Troubleshooting](#troubleshooting) 
-[Future Goal](#futuregoal) 
-[Contrubutions](#contribution) 
-[Authors](#authors)
-[Status](#status) 
+[Frameworks](#Frameworks) [Support](#support)  
+[Troubleshooting](#troubleshooting) [Future Goal](#futuregoal) [Contrubutions](#contribution) 
+[Authors](#authors)[Status](#status) 
 
 
 ## Hipster
