@@ -5,7 +5,7 @@
   text-align: center;
   position: relative;
   padding: 5px;
-  margin: 35px;
+  margin: 35px, 35px, 35px, 35px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -34,11 +34,22 @@
   box-shadow: 5px 2px 15px #d2d1d1;
 }
 
+/* .tagsBox {
+  border: black;
+  text-align: center;
+  display: flex;
+}
+
+.tag {
+  width: 70px;
+  padding: 5px;
+} */
+
 .btn {
   font-family: 'Courier New', Courier, monospace;
   cursor: pointer;
   border: 1px solid #293A57;
-  border-radius: 5%;
+  border-radius: 5px;
   background-color: white;
   color: #293A57;
   padding: 10px 28px;

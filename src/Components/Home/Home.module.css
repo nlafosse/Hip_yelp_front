@@ -1,6 +1,6 @@
 .body {
     background-color: rgba(0,0,0,0.05);
-
+    background-color: #382B34;
     /* border: 1px solid black; */
     box-shadow: 5px 2px 15px #d2d1d1;
     height: 80vh;
@@ -15,6 +15,8 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 10px;
+    color: #4c6c9F;
+    
 }
 
 .container {
@@ -23,6 +25,7 @@
     align-items: center;
     padding-top: 30px;
     text-align: center;
+    background-color: #D8AD69;
 }
 
 .link {

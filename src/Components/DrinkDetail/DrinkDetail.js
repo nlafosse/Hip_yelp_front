@@ -26,7 +26,17 @@ export default function DrinkDetail ({routerProps, hotspot}) {
             <p>{selected[0].group}</p>
             <p>{selected[0].description}</p>
             <p>{selected[0].address}</p>
+            {/* {selected[0].tags.map((tag) =>{
+              return <div className={drinkDetailStyle.tagsContainer}>
+                <span className={drinkDetailStyle.tags}>{tag}</span>
+              </div>
+            })} */}
           </div>
+          {/* <div className={drinkDetailStyle.tagBox}>
+          {selected[0].tags.map((tag) => {
+              return <span className={drinkDetailStyle.tags}>{tag}</span>
+            })}
+          </div> */}
         </div>
       <div className={drinkDetailStyle.home}>
         <Link to="/Drinks"><button type="button" className={drinkDetailStyle.btn}>BACK</button></Link>

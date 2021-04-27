@@ -4,7 +4,7 @@ import "./FooterStyles.css"
 
 const Footer = () => {
     return (
-    <footer>
+    <footer className="footerMain" >
         <nav className='footerNav'>
         <Link className={"FooterItem"} to="/" exact >Home</Link>
         <Link className={"FooterItem"} to="/about">About</Link>
