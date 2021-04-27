@@ -3,8 +3,11 @@
 [Hipster](#headers)
 <br />
 [Add More](#add)  
+<br />
 [SetupandInstallation](#setupandinstallation) 
+<br />
 [Food Page](#foodpage) 
+<br />
 [Drink Page](#drinkpage) 
 [Frameworks](#Frameworks) 
 [Support](#support)  
