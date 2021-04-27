@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 import * as drinkDetailStyle from './DrinkDetail.module.css'
 
 export default function DrinkDetail ({routerProps, hotspot}) {
-  console.log(routerProps)
+
 
   const selected = [...hotspot].filter(
     (h) => h.id == routerProps.match.params.id
   );
 
-  console.log(selected)
+ 
 
   if (selected[0] === undefined) {
     return (

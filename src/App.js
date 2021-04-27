@@ -4,13 +4,14 @@ import Home from './Components/Home/Home'
 import Foods from './Components/Foods/Foods'
 import { useState} from 'react'
 import Navbar from './Components/Navbar/Navbar'
-
 import FoodDetail from './Components/FoodDetail/FoodDetail'
 import Map from './Components/Map/Map';
 import Form from './Components/Forms/Form';
 import Drinks from './Components/Drinks/Drinks'
 import DrinkDetail from './Components/DrinkDetail/DrinkDetail'
 import SuccessfulAdd from './Components/SuccessfulAdd/SuccessfulAdd';
+import Footer from './Components/Footer/Footer'
+import AboutUs from './Components/AboutUs/AboutUS'
 // Save the Component, key and path in an array of objects for each Route
 // You could write all routes by hand but I'm lazy annd this lets me use
 // the map method to just loop over them and make my routes
@@ -19,27 +20,14 @@ import SuccessfulAdd from './Components/SuccessfulAdd/SuccessfulAdd';
 
 
 
-const routes = [
-  {
-    Component: Home,
-    key: 'Home',
-    path: '/',
-    
-    Component: Foods,
-    key: 'Foods',
-    path: '/Foods'
-  }
-]
+
 
 export default function App () {
   const [apiData, setApiData] = useState([]);
   // I added this to keep track of whether the current search was food or drinks. This needed to be passed to the map for the location popups to link properly
   const [currentCategory, setCurrentCategory] = useState("")
 
-  const apiEndpoint = {
-    endpointfoods: "foods",
-    endpointdrinkS: "drinks"
-  };
+
 
   const getApiData = async (param) => { 
     setCurrentCategory(param)
@@ -47,7 +35,7 @@ export default function App () {
       const res = await fetch(`https://hotspot1.herokuapp.com/${param}/`);
       const data = await res.json();
       setApiData(data)
-      console.log("work", res, apiData)
+    
     } catch (err) {
       console.log(err);
     }
@@ -78,7 +66,10 @@ export default function App () {
           render={(routerProps) => <DrinkDetail hotspot={apiData} routerProps={routerProps}/>}
         />
         <Route exact path="/Success" render={() => <SuccessfulAdd />} />
+        <Route exact path='/about' render={() => <AboutUs />} />
+        
       </Switch>
+      <Footer></Footer>
     </Router>
   )
 }
