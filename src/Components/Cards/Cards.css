@@ -24,12 +24,15 @@ a:hover {
 }
 .cards_text {
   background: rgb(186,186,186);
-  background: linear-gradient(104deg, rgba(186,186,186,0.9724264705882353) 0%, rgba(0,0,0,1) 76%);
+  background: linear-gradient(104deg, #293A57, rgba(0,0,0,1) 76%);
     color: white;
     position: relative;
     bottom: 5%;  
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: #293A57;
     
   }
 
