@@ -26,11 +26,11 @@ export default function DrinkDetail ({routerProps, hotspot}) {
             <p>{selected[0].group}</p>
             <p>{selected[0].description}</p>
             <p>{selected[0].address}</p>
-            {/* {selected[0].tags.map((tag) =>{
-              return <div className={drinkDetailStyle.tagsContainer}>
-                <span className={drinkDetailStyle.tags}>{tag}</span>
-              </div>
-            })} */}
+            <h4 className={drinkDetailStyle.tagHeadline}>Tags:</h4>
+            {selected[0].tags.map((tag) =>{
+              return <p className={drinkDetailStyle.tags}>{tag}</p>
+                    
+            })}
           </div>
           {/* <div className={drinkDetailStyle.tagBox}>
           {selected[0].tags.map((tag) => {

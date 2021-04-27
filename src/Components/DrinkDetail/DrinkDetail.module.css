@@ -29,21 +29,29 @@
 
 .basicInfo {
   padding: 10px;
+  padding-bottom: 30px;
   margin: 10px 45px 30px 45px;
   /* border: 1px solid black; */
   box-shadow: 5px 2px 15px #d2d1d1;
 }
 
-/* .tagsBox {
-  border: black;
-  text-align: center;
-  display: flex;
+.tagHeadline {
+  margin-bottom: 10px;
 }
 
-.tag {
-  width: 70px;
-  padding: 5px;
-} */
+.tags {
+  display: inline-block;
+  color: #293A57;
+  border: 1px dashed #293A57;
+  padding: 3px 5px 3px 5px;
+  border-radius: 20px;
+  margin: 2px;
+}
+
+.tags:hover {
+  color: white;
+  background-color: #293A57;
+}
 
 .btn {
   font-family: 'Courier New', Courier, monospace;
