@@ -1,31 +1,20 @@
 ## Table of content
 
 [Header](#headers)  
-
 [Add More](#add)  
-
 [SetupandInstallation](#setupandinstallation) 
-
 [Food Page](#foodpage) 
-
 [Drink Page](#drinkpage) 
-
 [Frameworks](#Frameworks)
-
 [Support](#support)  
-
 [Troubleshooting](#troubleshooting) 
-
 [Future Goal](#futuregoal) 
-
 [Contrubutions](#contribution) 
-
 [Authors](#authors)
-
 [Status](#status) 
 
 
-## Headers
+## Hipster
 
 This is site for people who wants to explore local foods and drinks. User can click on individual tabs of food and drink to explore what they like to checkout. Then user can click on map to see all the locations in one click. 
 
