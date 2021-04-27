@@ -38,16 +38,19 @@ We created this page because if we want to go out for a food or drink, one have 
 
 
 ## FoodPage
-<img width="1167" alt="Screen Shot 2021-04-27 at 12 14 10 AM" src="https://user-images.githubusercontent.com/79564250/116184302-8001e580-a6ed-11eb-899d-d5298e8891a1.png">
+<img width="1219" alt="Screen Shot 2021-04-27 at 12 39 51 AM" src="https://user-images.githubusercontent.com/79564250/116186171-1683d600-a6f1-11eb-879d-b58223af6526.png">
+
 
 
 ## DrinkPage
-<img width="1169" alt="Screen Shot 2021-04-27 at 12 14 38 AM" src="https://user-images.githubusercontent.com/79564250/116184343-8f812e80-a6ed-11eb-94fb-7fafcde0370c.png">
+<img width="1156" alt="Screen Shot 2021-04-27 at 12 40 13 AM" src="https://user-images.githubusercontent.com/79564250/116186202-23a0c500-a6f1-11eb-894d-74abac3fde2e.png">
+
 
 
 ## Add
 Using this site, hippies can find food, bar and night life near them. If user have visited other local resturant or bar, they can simply click on add button and list on this website. 
-<img width="1155" alt="Screen Shot 2021-04-26 at 9 53 02 PM" src="https://user-images.githubusercontent.com/79564250/116173023-cc432a80-a6d9-11eb-834f-17df81639c5b.png">
+
+<img width="1212" alt="Screen Shot 2021-04-27 at 12 40 43 AM" src="https://user-images.githubusercontent.com/79564250/116186231-36b39500-a6f1-11eb-9817-b2e238ff438e.png">
 
 ## SetupandInstallation
 
