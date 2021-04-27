@@ -48,7 +48,6 @@ const FoodForm = () => {
                 return console.log("Sorry, error. Code:", res.status)
             }
             const data = await res.json();
-            console.log(data)
             history.push('/Success');
 
         } catch (err) {
@@ -57,11 +56,22 @@ const FoodForm = () => {
         }
     }
 
+    const makeNewHotspot = () => {
+        setNewHotspot({
+            name: name,
+            group: group,
+            address: `${address} ${city} ${state} ${zip}`,
+            description: description,
+            photo_url: photoUrl,
+            lon: longitude.toString(),
+            lat: latitude.toString(),
+            tags: tags
+        })
+    }
 
     const getCoords = async () => { 
         let param = address.split(' ').join("+")
         let cityParam = city.split(' ').join("+")
-        
         try {
           const res = await fetch(`https://api.geocod.io/v1.6/geocode?street=${param}&city=${cityParam}&state=${state}&postal_code=${zip}&api_key=${process.env.REACT_APP_GEOCODER_KEY}&limit=1`);
           const data = await res.json();
@@ -74,35 +84,6 @@ const FoodForm = () => {
         }
     }
 
-    const makeNewHotspot = () => {
-        let args = (category === 'foods' ? "foodTags" : "drinkTags")
-        if(category === "foods" ) {
-            setNewHotspot({
-                name: name,
-                group: group,
-                address: `${address} ${city} ${state} ${zip}`,
-                description: description,
-                photo_url: photoUrl,
-                lon: longitude.toString(),
-                lat: latitude.toString(),
-                foodTags: tags
-            })
-        } else if (category === "drinks") {
-            setNewHotspot({
-                name: name,
-                group: group,
-                address: `${address} ${city} ${state} ${zip}`,
-                description: description,
-                photo_url: photoUrl,
-                lon: longitude.toString(),
-                lat: latitude.toString(),
-                drinkTags: tags
-            })
-        }
-    }
-
-    
-
     const handleSubmit = (event) => {
         event.preventDefault();
         getCoords()
@@ -110,12 +91,11 @@ const FoodForm = () => {
     // This updates the state for tags when a box is check or unchecked
     const handleCheck = (event) => {
         if(event.checked) {
-            tags.push({"tags": event.value})
+            tags.push(event.value)
         } else {
             let index = tags.indexOf(event.value)
             tags.splice(index, 1)
         }
-        console.log(tags)
     }
 
     useEffect(() => {
@@ -130,7 +110,6 @@ const FoodForm = () => {
         if(latitude === "") {
             return null
         } else {
-            console.log(longitude, latitude)
             makeNewHotspot()
         }
     }, [latitude])
@@ -183,7 +162,7 @@ const FoodForm = () => {
                     <input className={formStyles.input} type="text" name="photo" placeholder="Photo Url" value={photoUrl} onChange={(e) => setPhotoUrl(e.target.value)}></input>
                 </div>
                 <div className={formStyles.descriptionContainer}>
-                    <label className={formStyles.label} htmlfor="description">Describe This Business!</label>
+                    <label className={`${formStyles.label} ${formStyles.descriptionLabel}`} htmlfor="description">Describe This Business!</label>
                     <textarea className={formStyles.description} type="text" name="description" placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
                 </div>
                 <div className={formStyles.tagContainer}> 
