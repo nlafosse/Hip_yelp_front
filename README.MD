@@ -2,8 +2,7 @@
 
 [Hipster](#headers)
 <br />
-[Add More](#add)  
-<br />
+[Add More](#add)
 [SetupandInstallation](#setupandinstallation) 
 <br />
 [Food Page](#foodpage) 
@@ -13,7 +12,6 @@
 [Frameworks](#Frameworks) 
 <br />
 [Support](#support)  
-<br />
 [Troubleshooting](#troubleshooting) 
 <br />
 [Future Goal](#futuregoal) 
