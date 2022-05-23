@@ -33,7 +33,7 @@ const FoodForm = () => {
 
     const addData = async () => {
         try{
-            const res = await fetch(`https://hotspot1.herokuapp.com/${category}/`,
+            const res = await fetch(`https://demo-cli-strategio.herokuapp.com/${category}/`,
                 {
                     method: "POST",
                     headers: {
