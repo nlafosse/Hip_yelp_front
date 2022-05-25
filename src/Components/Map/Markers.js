@@ -12,7 +12,7 @@ const Markers = ({ apiData, setSelected }) => {
 
 
   return (
-    <div>
+    <div data-testid={"marker-container"}>
       {apiData.map((location) => {
         return (
           <Marker key={location.lat} latitude={parseFloat(location.lat)} longitude={parseFloat(location.lon)} offsetLeft={-10} offsetTop={-15} >

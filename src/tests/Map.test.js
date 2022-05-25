@@ -1,15 +1,28 @@
-import { render, screen, fireEvent, cleanup } from '@testing-library/react';
+import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 import App from '../App';
+
+// jest.setTimeout(15000)
 
 beforeEach(() => {
   act(() => {
     render(<App />)
   })
-  const foodLink = screen.getAllByText("Map")[0];
+  const mapLink = screen.getAllByText("Map")[0];
   act(() => {
-    fireEvent.click(foodLink);
+    fireEvent.click(mapLink);
   })
 })
 
 afterAll(cleanup);
+
+describe("Map", () => {
+  it("Map Should Render", async () => {
+    let mapbox;
+
+    await waitFor(async () => {
+      mapbox = await screen.findByTestId("mapbox-container");
+    }, { timeout: 2000 })
+    expect(mapbox).toBeInTheDocument();
+  })
+})

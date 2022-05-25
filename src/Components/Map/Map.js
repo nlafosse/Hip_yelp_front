@@ -24,13 +24,15 @@ const Map = ({ apiData, getApiData, currentCategory }) => {
 
 
   return (
-    <ReactMapGl
-      {...viewport}
-      mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_KEY}
-      onViewportChange={newViewport => setViewPort(newViewport)}>
-      <Markers apiData={apiData} getApiData={getApiData} setSelected={setSelected}></Markers>
-      <LocationPopup selected={selected} setSelected={setSelected} currentCategory={currentCategory}></LocationPopup>
-    </ReactMapGl>
+    <div data-testid={"mapbox-container"}>
+      <ReactMapGl
+        {...viewport}
+        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_KEY}
+        onViewportChange={newViewport => setViewPort(newViewport)} container={<div data-testid={"mapbox-container"}></div>} id={"map-box"}>
+        <Markers apiData={apiData} getApiData={getApiData} setSelected={setSelected}></Markers>
+        <LocationPopup selected={selected} setSelected={setSelected} currentCategory={currentCategory}></LocationPopup>
+      </ReactMapGl>
+    </div>
   )
 }
 
