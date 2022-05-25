@@ -2,8 +2,6 @@ import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/re
 import { act } from 'react-dom/test-utils';
 import App from '../App';
 
-// jest.setTimeout(15000)
-
 beforeEach(() => {
   act(() => {
     render(<App />)
