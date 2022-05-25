@@ -1,16 +1,16 @@
-import{Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "./FooterStyles.css"
 
 
 const Footer = () => {
-    return (
-    <footer className="footerMain" >
-        <nav className='footerNav'>
+  return (
+    <footer className="footerMain">
+      <nav className='footerNav' data-testid={"footer-nav"}>
         <Link className={"FooterItem"} to="/" exact >Home</Link>
         <Link className={"FooterItem"} to="/about">About</Link>
-        </nav>
+      </nav>
     </footer>
-    )
+  )
 }
 
 export default Footer

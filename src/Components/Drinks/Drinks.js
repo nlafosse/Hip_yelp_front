@@ -2,8 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import Cards from "../Cards/Cards"
 
-const Drink = ({apiData, getApiData}) => {
-
+const Drink = ({ apiData, getApiData }) => {
   useEffect(() => {
     getApiData("drinks")
   }, [])
@@ -11,9 +10,9 @@ const Drink = ({apiData, getApiData}) => {
 
 
   return (
-    <div className= "drinks">
-     
-      <Cards placeData={apiData} group={"Drinks"}/>
+    <div className="drinks" data-testid={"drinks-card-container"}>
+
+      <Cards placeData={apiData} group={"Drinks"} />
     </div>
   )
 }
