@@ -26,7 +26,7 @@ export default function App() {
   const getApiData = async (param) => {
     setCurrentCategory(param)
     try {
-      const res = await fetch(`https://hotspot1.herokuapp.com/${param}/`);
+      const res = await fetch(`https://demo-cli-strategio.herokuapp.com/${param}/`);
       const data = await res.json();
       setApiData(data)
     } catch (err) {

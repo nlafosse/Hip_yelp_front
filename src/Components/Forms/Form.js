@@ -4,42 +4,54 @@ import * as formStyles from './Form.module.css'
 
 
 const FoodForm = () => {
+    // const [coords, setCoords] = useState({})
 
-  // const [coords, setCoords] = useState({})
+    const [category, setCategory] = useState('foods')
+    const [name, setName] = useState("")
+    const [group, setGroup] = useState("Italian")
+    const [address, setAddress] = useState("")
+    const [city, setCity] = useState("")
+    const [state, setState] = useState("NY")
+    const [zip, setZip] = useState("")
+    const [description, setDescription] = useState("")
+    const [photoUrl, setPhotoUrl] = useState("")
+    const [longitude, setLongitude] = useState("")
+    const [latitude, setLatitude] = useState("")
+    const [tags, setTags] = useState([])
+    const [newHotspot, setNewHotspot] = useState(null)
 
-  const [category, setCategory] = useState('foods')
-  const [name, setName] = useState("")
-  const [group, setGroup] = useState("Italian")
-  const [address, setAddress] = useState("")
-  const [city, setCity] = useState("")
-  const [state, setState] = useState("NY")
-  const [zip, setZip] = useState("")
-  const [description, setDescription] = useState("")
-  const [photoUrl, setPhotoUrl] = useState("")
-  const [longitude, setLongitude] = useState("")
-  const [latitude, setLatitude] = useState("")
-  const [tags, setTags] = useState([])
-  const [newHotspot, setNewHotspot] = useState(null)
+    // Declaring History to use for redirect after successful add
+    const history = useHistory();
+    // For the list in the drop down
+    const states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Washington DC", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
+    // The geocoder api uses the state abbreviations. So this is here to insert the correct state code for the state that is selected
+    const stateAbr = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
+    const groups = ["Italian", "French", "Cuban", "Carribbean", "Mexican", "Ethiopian", "Gastropub", "Chinese", "American", "Japanese", "Korean", "Middle Eastern", "Mediterranean", "Indian", "Thai", "Vietnamese"]
+    const listOfTags = ["food", "drink", "beer", "nightlife", "dine in", "pet friendly", "chinese", "asian", "latin", "lgbt-friendly", "casual", "high-end", "kid-friendly", "21+", "18+", "happy-hour", "vegan-friendly", "vegan-only", "gluten-free-friendly", "american", "mexican", "vietnamese", "japanese", "thai", "pizza", "korean", "bar", "fast-food", "date spot"
+    ]
 
-  // Declaring History to use for redirect after successful add
-  const history = useHistory();
-  // For the list in the drop down
-  const states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Washington DC", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
-  // The geocoder api uses the state abbreviations. So this is here to insert the correct state code for the state that is selected
-  const stateAbr = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
-  const groups = ["Italian", "French", "Cuban", "Carribbean", "Mexican", "Ethiopian", "Gastropub", "Chinese", "American", "Japanese", "Korean", "Middle Eastern", "Mediterranean", "Indian", "Thai", "Vietnamese"]
-  const listOfTags = ["food", "drink", "beer", "nightlife", "dine in", "pet friendly", "chinese", "asian", "latin", "lgbt-friendly", "casual", "high-end", "kid-friendly", "21+", "18+", "happy-hour", "vegan-friendly", "vegan-only", "gluten-free-friendly", "american", "mexican", "vietnamese", "japanese", "thai", "pizza", "korean", "bar", "fast-food", "date spot"
-  ]
+    const addData = async () => {
+        try{
+            const res = await fetch(`https://demo-cli-strategio.herokuapp.com/${category}/`,
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(newHotspot)
+                }
+            );
+            console.log(res)
+            // Having issues catching error so I added some logic to ensure that the page does not change if there is a server error
+            if(res.status !== 201) {
+                return console.log("Sorry, error. Code:", res.status)
+            }
+            
+            history.push('/Success');
 
-  const addData = async () => {
-    try {
-      const res = await fetch(`https://hotspot1.herokuapp.com/${category}/`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(newHotspot)
+        } catch (err) {
+            console.log(err);
+            // Why is this not throwing an error??
         }
       );
       console.log(res)
