@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, cleanup } from '@testing-library/react';
+import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 import App from '../App';
 
@@ -25,7 +25,13 @@ describe('Drink Card Container', () => {
 
 describe('Drink Cards', () => {
   it('Cards Should Contain Img And Bar/Lounge Name', async () => {
-    const cards = await screen.findAllByTestId("card");
+    let cards;
+    await waitFor(async () => {
+      cards = await screen.findAllByTestId("card");
+    })
+
+    console.log(cards);
+
     cards.forEach(place => {
       const link = place.children[0];
       expect(place.children.length).toBe(1);
