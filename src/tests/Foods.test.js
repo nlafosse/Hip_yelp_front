@@ -26,6 +26,7 @@ describe('Food Card Container', () => {
 describe('Food Card', () => {
   it('Cards Should Contain Img And Restaurant Name', async () => {
     const cards = await screen.findAllByTestId("card");
+    
     cards.forEach(place => {
       const link = place.children[0];
       expect(place.children.length).toBe(1);
